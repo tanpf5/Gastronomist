@@ -1,3 +1,5 @@
 INDEX VERSION 1.126
 /Users/Vigery/GitHub/Web/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/567602091.index
 /Gastronomist/src
+/Users/Vigery/GitHub/Web/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4158442707.index
+/testShooping/src

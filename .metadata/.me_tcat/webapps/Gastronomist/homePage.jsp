@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*, JavaBean.Normaluser" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -76,7 +76,8 @@ function change2(obj){
   </head>
 <body>
 <div class="top"><img src="2.png"style="width:300px;height:100px;"></img>
-<div class="name"><%String name=request.getParameter("username");
+<div class="name"><%Normaluser user = (Normaluser) request.getSession().getAttribute("user");
+					String name = user.getUsername();
                     out.println("hello  "+name); %><a href="index.jsp">MYORDER</a><a id="a1" href="Reset.jsp">RESET</a></div></div>
 <div class="div17">
 	
@@ -88,7 +89,7 @@ function change2(obj){
 	<div id="e" class="e" ><img src="dacan5.jpg"></img></div>
 	<div id="f" class="f" ><img src="dacan6.jpg"></img></div>
 	</div>
-	<div class="div18"><a href="dish.do?id=<%=3 %>"><img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:39px;margin-top:40px;"></img></a>
+	<div class="div18"><a href="dish.do?id=<%=1 %>"><img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:39px;margin-top:40px;"></img></a>
 	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:10px;"></img>
 	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:10px;"></img>
 	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:49px;margin-top:20px;"></img>

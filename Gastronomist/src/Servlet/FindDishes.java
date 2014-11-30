@@ -33,8 +33,8 @@ public class FindDishes extends HttpServlet {
 		DatabaseManager dbm = new DatabaseManager();
 		Collection<Dish> dishes= dbm.findAllDishByRest(rest_id);
 		request.setAttribute("dishes", dishes);
-		//RequestDispatcher rd = request.getRequestDispatcher("test.do");
-		//rd.forward(request, response);
+		RequestDispatcher rd = request.getRequestDispatcher("test.do");
+		rd.forward(request, response);
 	}
 
 	/**

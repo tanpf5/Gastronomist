@@ -694,3 +694,6 @@ org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
 
 !ENTRY org.eclipse.jdt.core 2 0 2014-11-29 23:20:20.079
 !MESSAGE The Java indexing could not index /Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/ext/nashorn.jar|jdk/nashorn/internal/objects/NativeURIError.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.debug.ui 4 0 2014-11-29 23:27:18.639
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)

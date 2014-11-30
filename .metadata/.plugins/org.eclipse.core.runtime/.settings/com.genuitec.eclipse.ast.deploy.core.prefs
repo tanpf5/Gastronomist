@@ -1,14 +1,26 @@
-#Sat Nov 29 23:23:26 EST 2014
-myeclipseTomcatServer.Gastronomist.isDeployed=true
-myeclipseTomcatServer.Gastronomist.noFileCopy=false
+#Sun Nov 30 09:46:32 EST 2014
 myeclipseTomcatServer.Gastronomist.contextRoot=/Gastronomist
-myeclipseTomcatServer.Gastronomist.shouldBackup=false
-myeclipseTomcatServer.Gastronomist.shouldOverwrite=false
-myeclipseTomcatServer.Gastronomist.deployIsOverProject=false
-myeclipseTomcatServer.Gastronomist.isExploded=true
 myeclipseTomcatServer.Gastronomist.type=WebDeployment
-myeclipseTomcatServer.Gastronomist.IEARProjectName=
+myeclipseTomcatServer.testShooping.type=WebDeployment
 myeclipseTomcatServer.Gastronomist.altContextRoot=/Gastronomist
+myeclipseTomcatServer.testShooping.isDeployed=true
 eclipse.preferences.version=1
+myeclipseTomcatServer.testShooping.isUptoDate=true
+myeclipseTomcatServer.testShooping.deployIsOverProject=false
+myeclipseTomcatServer.Gastronomist.deployIsOverProject=false
+myeclipseTomcatServer.testShooping.shouldBackup=false
+myeclipseTomcatServer.Gastronomist.isDeployed=true
+myeclipseTomcatServer.testShooping.altContextRoot=/testShooping
 myeclipseTomcatServer.Gastronomist.isUptoDate=true
+myeclipseTomcatServer.testShooping.noFileCopy=false
+myeclipseTomcatServer.testShooping.deploymentPath=/Users/Vigery/GitHub/Web/.metadata/.me_tcat/webapps/testShooping
+myeclipseTomcatServer.testShooping.shouldOverwrite=false
+myeclipseTomcatServer.testShooping.IEARProjectName=
+myeclipseTomcatServer.Gastronomist.isExploded=true
+myeclipseTomcatServer.testShooping.contextRoot=/testShooping
+myeclipseTomcatServer.Gastronomist.shouldBackup=false
+myeclipseTomcatServer.Gastronomist.noFileCopy=false
 myeclipseTomcatServer.Gastronomist.deploymentPath=/Users/Vigery/GitHub/Web/.metadata/.me_tcat/webapps/Gastronomist
+myeclipseTomcatServer.Gastronomist.shouldOverwrite=false
+myeclipseTomcatServer.testShooping.isExploded=true
+myeclipseTomcatServer.Gastronomist.IEARProjectName=

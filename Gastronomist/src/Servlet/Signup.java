@@ -44,8 +44,10 @@ public class Signup extends HttpServlet {
 			boolean succ = dbm.signup(id, user_name, password, tele_num, address);
 			
 			if (succ) {
-				String url = "homePage.jsp?id="+id+"&username="+user_name;
-				url = new String(url.getBytes("GBK"),"ISO8859_1"); 
+				Normaluser user = dbm.checkInfo(id);
+				request.getSession().setAttribute("user", user);
+				String url="homePage.jsp";
+				url=new String(url.getBytes("GBK"),"ISO8859_1"); 
 				response.sendRedirect(url); 
 			}
 			else {

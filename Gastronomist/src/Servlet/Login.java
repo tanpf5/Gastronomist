@@ -30,10 +30,17 @@ public class Login extends HttpServlet {
 		String password = request.getParameter("password");
 		DatabaseManager dbm = new DatabaseManager();
 		Normaluser user = dbm.normaluserLogin(username, password);
-		int id = user.getId();
-		String url="homePage.jsp?id="+id+"&username="+username;
-		url=new String(url.getBytes("GBK"),"ISO8859_1"); 
-		response.sendRedirect(url); 
+		if (user == null) {
+			String url="index.jsp";
+			url=new String(url.getBytes("GBK"),"ISO8859_1"); 
+			response.sendRedirect(url);
+		}
+		else {
+			request.getSession().setAttribute("user", user);
+			String url="homePage.jsp";
+			url=new String(url.getBytes("GBK"),"ISO8859_1"); 
+			response.sendRedirect(url); 
+		}
 	}
 
 	/**
