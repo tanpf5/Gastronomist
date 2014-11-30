@@ -160,7 +160,6 @@ body{
 	margin:0 auto;
 	
 }
-/*飞跃重洋的div*/
 .div3{
     width:350px;
 	height:117px;
@@ -168,14 +167,12 @@ body{
 	margin-left:540px;
 	margin-top:90px;
 }
-/*span里面的style*/
 .style1{
     margin:0 auto;
     color:red;
     font-size:70px;
     /*background-color:yellow;*/
 }
-/*logo部分*/
 .logo{
     width:250px;
 	height:91px;
@@ -237,7 +234,6 @@ a:link{
 a:hover{
 	font-size:35px;
 }
-/*这里开始最后一个打的div*/
 .div9{
    width:800px;
    height:400px;

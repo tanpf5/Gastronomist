@@ -72,8 +72,10 @@ public class DatabaseManager {
 		return normaluserDAO.checkInfo(i);
 	}
 	
-	public void updateInfo(int i, String tn, String a) {
-		normaluserDAO.updateInfo(i, tn, a);
+	public boolean updateInfo(int i, String un, String pw, String tn, String a) {
+		if (normaluserDAO.checkDuplicatedUsername(i, un)) return false;
+		normaluserDAO.updateInfo(i, un, pw, tn, a);
+		return true;
 	}
 	
 	public Restaurant findRestaurant(int id) {

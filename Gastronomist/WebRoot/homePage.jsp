@@ -8,7 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <base href="<%=basePath%>">
-    <title>Gastronomist Meal</title>
+    <title>Gastronomist</title>
    <link href="css/homePage.css" type="text/css" rel="stylesheet">
    <link href="css/homePage2.css" type="text/css" rel="stylesheet" >
    <script language="javascript">
@@ -78,10 +78,10 @@ function change2(obj){
 <div class="top"><img src="images/2.png"style="width:300px;height:100px;"></img>
 <div class="name"><%Normaluser user = (Normaluser) request.getSession().getAttribute("user");
 					String name = user.getUsername();
-                    out.println("hello  "+name); %><a href="index.jsp">MYORDER</a><a id="a1" href="Reset.jsp">RESET</a></div></div>
+                    out.println("hello  "+name); %><a href="myOrder.do">MYORDER</a><a href="info.jsp">INFO</a></div></div>
 <div class="div17">
 	
-	<!--shift右部div-->
+	<!--shift右部-->
 	<div id="a" class="a" ><img src="images/dacan1.jpg"></img></div>
 	<div id="b" class="b" ><img src="images/dacan2.jpg"></img></div>
 	<div id="c" class="c" ><img src="images/dacan3.jpg"></img></div>

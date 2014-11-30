@@ -5,7 +5,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 <html>
  <head>
-  <title>Gastronomist Meal</title>
+  <title>Gastronomist</title>
   <script type="text/javascript">
   function submit()
   {document.myfrom.submit();}

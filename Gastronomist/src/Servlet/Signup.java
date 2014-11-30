@@ -32,7 +32,7 @@ public class Signup extends HttpServlet {
 		String tele_num = request.getParameter("tel");
 		String address = request.getParameter("address");
 		
-		if (password != confirm) {
+		if (!password.equals(confirm)) {
 			String url = "signup.jsp?message=differentpassword";
 			url = new String(url.getBytes("GBK"),"ISO8859_1"); 
 			response.sendRedirect(url); 

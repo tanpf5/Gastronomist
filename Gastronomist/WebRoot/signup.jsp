@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>Gastronomist Meal</title>
+    <title>Gastronomist</title>
     <script type="text/javascript">
   function submit()
   {document.myfrom.submit();}
@@ -49,7 +49,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <input type="text"name="address"style="width:250px;height:43px;margin-left:20px;">
 </div></div>
 <div class="Tel"><div class="Tel-helper">
-<font size="3" style="font-family:verdana">Tel</font>
+<font size="3" style="font-family:verdana">Telephone</font>
 <font size="2" style="font-family:verdana;color:red">*</font>
 <input type="text"name="tel"style="width:250px;height:43px;margin-left:20px;">
 </div></div>

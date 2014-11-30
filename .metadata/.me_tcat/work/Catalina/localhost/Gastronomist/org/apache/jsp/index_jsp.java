@@ -59,7 +59,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       out.write("\n");
       out.write("<html>\n");
       out.write(" <head>\n");
-      out.write("  <title>Gastronomist Meal</title>\n");
+      out.write("  <title>Gastronomist</title>\n");
       out.write("  <script type=\"text/javascript\">\n");
       out.write("  function submit()\n");
       out.write("  {document.myfrom.submit();}\n");

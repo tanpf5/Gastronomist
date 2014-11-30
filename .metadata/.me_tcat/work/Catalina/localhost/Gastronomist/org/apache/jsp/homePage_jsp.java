@@ -65,7 +65,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       out.write("    <base href=\"");
       out.print(basePath);
       out.write("\">\n");
-      out.write("    <title>Gastronomist Meal</title>\n");
+      out.write("    <title>Gastronomist</title>\n");
       out.write("   <link href=\"css/homePage.css\" type=\"text/css\" rel=\"stylesheet\">\n");
       out.write("   <link href=\"css/homePage2.css\" type=\"text/css\" rel=\"stylesheet\" >\n");
       out.write("   <script language=\"javascript\">\n");
@@ -137,10 +137,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 Normaluser user = (Normaluser) request.getSession().getAttribute("user");
 					String name = user.getUsername();
                     out.println("hello  "+name); 
-      out.write("<a href=\"index.jsp\">MYORDER</a><a id=\"a1\" href=\"Reset.jsp\">RESET</a></div></div>\n");
+      out.write("<a href=\"myOrder.do\">MYORDER</a><a href=\"info.jsp\">INFO</a></div></div>\n");
       out.write("<div class=\"div17\">\n");
       out.write("\t\n");
-      out.write("\t<!--shift右部div-->\n");
+      out.write("\t<!--shift右部-->\n");
       out.write("\t<div id=\"a\" class=\"a\" ><img src=\"images/dacan1.jpg\"></img></div>\n");
       out.write("\t<div id=\"b\" class=\"b\" ><img src=\"images/dacan2.jpg\"></img></div>\n");
       out.write("\t<div id=\"c\" class=\"c\" ><img src=\"images/dacan3.jpg\"></img></div>\n");

@@ -2,6 +2,7 @@ package Servlet;
 
 import java.io.IOException;
 import java.util.Collection;
+import java.util.Iterator;
 import java.io.PrintWriter;
 import java.util.Collection;
 
@@ -12,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import DAO.DatabaseManager;
 import JavaBean.Administrator;
+import JavaBean.Dish;
 import JavaBean.Normaluser;
 import JavaBean.Orders;
 import JavaBean.Restaurant;
@@ -34,9 +36,25 @@ public class Test extends HttpServlet {
 		String username=request.getParameter("username");
 		String password=request.getParameter("password");
 		DatabaseManager dbm = new DatabaseManager();
-		Collection<Orders> orders = (Collection<Orders>) request.getAttribute("dishes");
+		Collection<Dish> dishes = (Collection<Dish>) request.getAttribute("dishes");
+		Collection<Orders> orders = (Collection<Orders>) request.getAttribute("orders");
 		
 		//response.sendRedirect(url); 
+		/*Iterator<Orders> iterator = orders.iterator();
+		while (iterator.hasNext()) {
+			Orders order = iterator.next();
+			int id = order.getId();
+			
+			double price = order.getPrice();
+		}*/
+		Iterator<Dish> iterator = dishes.iterator();
+		while (iterator.hasNext()) {
+			Dish dish = iterator.next();
+			String dish_name = dish.getDi_name();
+			double price = dish.getPrice();
+			int times = dish.getTimes();
+			int mark = dish.getMark();
+		}
 	}
 
 	/**

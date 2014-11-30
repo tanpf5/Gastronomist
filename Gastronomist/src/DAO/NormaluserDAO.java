@@ -86,6 +86,28 @@ public class NormaluserDAO {
 		}
 	}
 	
+	public boolean checkDuplicatedUsername(int id, String username){
+		try {
+			String qry = "select id, user_name, password, tele_num, address "
+						+"from Normaluser "
+						+"where user_name = ?";
+			PreparedStatement pstmt = conn.prepareStatement(qry);
+			pstmt.setString(1, username);
+			ResultSet rs = pstmt.executeQuery();
+			
+			while (rs.next()) {
+				if (id != rs.getInt("id")) return true;
+			}
+			
+			return false;
+			
+		}
+		catch (SQLException e) {
+			dbm.cleanup();
+			throw new RuntimeException("error finding normal user", e);
+		}
+	}
+	
 	public Normaluser checkInfo(int i) {
 		try {
 			String qry = "select id, user_name, password, tele_num, address "
@@ -112,15 +134,17 @@ public class NormaluserDAO {
 		}
 	}
 	
-	public void updateInfo(int i, String tn, String a) {
+	public void updateInfo(int i, String un, String pw, String tn, String a) {
 		try {
 			String cmd = "update Normaluser "
-						+"set tele_num = ?, address = ? "
+						+"set user_name = ?, password = ?, tele_num = ?, address = ? "
 						+"where id = ?";
 			PreparedStatement pstmt = conn.prepareStatement(cmd);
-			pstmt.setString(1, tn);
-			pstmt.setString(2, a);
-			pstmt.setInt(3, i);
+			pstmt.setString(1, un);
+			pstmt.setString(2, pw);
+			pstmt.setString(3, tn);
+			pstmt.setString(4, a);
+			pstmt.setInt(5, i);
 			pstmt.executeUpdate();
 						
 		}

@@ -65,7 +65,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       out.print(basePath);
       out.write("\">\n");
       out.write("    \n");
-      out.write("    <title>Gastronomist Meal</title>\n");
+      out.write("    <title>Gastronomist</title>\n");
       out.write("    <script type=\"text/javascript\">\n");
       out.write("  function submit()\n");
       out.write("  {document.myfrom.submit();}\n");
@@ -105,7 +105,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       out.write("<input type=\"text\"name=\"address\"style=\"width:250px;height:43px;margin-left:20px;\">\n");
       out.write("</div></div>\n");
       out.write("<div class=\"Tel\"><div class=\"Tel-helper\">\n");
-      out.write("<font size=\"3\" style=\"font-family:verdana\">Tel</font>\n");
+      out.write("<font size=\"3\" style=\"font-family:verdana\">Telephone</font>\n");
       out.write("<font size=\"2\" style=\"font-family:verdana;color:red\">*</font>\n");
       out.write("<input type=\"text\"name=\"tel\"style=\"width:250px;height:43px;margin-left:20px;\">\n");
       out.write("</div></div>\n");
