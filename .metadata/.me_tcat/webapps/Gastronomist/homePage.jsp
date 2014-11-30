@@ -9,8 +9,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     <title>Gastronomist Meal</title>
-   <link href="homePage.css" type="text/css" rel="stylesheet">
-   <link href="homePage2.css" type="text/css" rel="stylesheet" >
+   <link href="css/homePage.css" type="text/css" rel="stylesheet">
+   <link href="css/homePage2.css" type="text/css" rel="stylesheet" >
    <script language="javascript">
   function change(val,obj){
     if(val=='a'){
@@ -75,27 +75,27 @@ function change2(obj){
 	<meta http-equiv="description" content="This is my page">
   </head>
 <body>
-<div class="top"><img src="2.png"style="width:300px;height:100px;"></img>
+<div class="top"><img src="images/2.png"style="width:300px;height:100px;"></img>
 <div class="name"><%Normaluser user = (Normaluser) request.getSession().getAttribute("user");
 					String name = user.getUsername();
                     out.println("hello  "+name); %><a href="index.jsp">MYORDER</a><a id="a1" href="Reset.jsp">RESET</a></div></div>
 <div class="div17">
 	
 	<!--shift右部div-->
-	<div id="a" class="a" ><img src="dacan1.jpg"></img></div>
-	<div id="b" class="b" ><img src="dacan2.jpg"></img></div>
-	<div id="c" class="c" ><img src="dacan3.jpg"></img></div>
-	<div id="d" class="d" ><img src="dacan4.jpg"></img></div>
-	<div id="e" class="e" ><img src="dacan5.jpg"></img></div>
-	<div id="f" class="f" ><img src="dacan6.jpg"></img></div>
+	<div id="a" class="a" ><img src="images/dacan1.jpg"></img></div>
+	<div id="b" class="b" ><img src="images/dacan2.jpg"></img></div>
+	<div id="c" class="c" ><img src="images/dacan3.jpg"></img></div>
+	<div id="d" class="d" ><img src="images/dacan4.jpg"></img></div>
+	<div id="e" class="e" ><img src="images/dacan5.jpg"></img></div>
+	<div id="f" class="f" ><img src="images/dacan6.jpg"></img></div>
 	</div>
-	<div class="div18"><a href="dish.do?id=<%=1 %>"><img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:39px;margin-top:40px;"></img></a>
+	<div class="div18"><a href="dish.do?id=<%=1 %>"><img id="w" src="images/dacan1.jpg" style="width:250px;height:250px;margin-left:39px;margin-top:40px;"></img></a>
 	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:10px;"></img>
 	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:10px;"></img>
 	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:49px;margin-top:20px;"></img>
 	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:20px;"></img>
 	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:20px;"></img>
-	<div class="interpertation"><img src="5.png"></img></div>                  
+	<div class="interpertation"><img src="images/5.png"></img></div>                  
 	</div>
 </body>
 </html>

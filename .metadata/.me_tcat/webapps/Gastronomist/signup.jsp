@@ -19,11 +19,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<link href="signup.css" type="text/css" rel="stylesheet">
+	<link href="css/signup.css" type="text/css" rel="stylesheet">
 
   </head>
   <body>
-<div class="top-blank"><img src="13.jpg"></img></div>
+<div class="top-blank"><img src="images/13.jpg"></img></div>
 <div class="background-register">
 <form action="signup.do" method=post>
 <div class="register-blank">
@@ -53,11 +53,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <font size="2" style="font-family:verdana;color:red">*</font>
 <input type="text"name="tel"style="width:250px;height:43px;margin-left:20px;">
 </div></div>
-<div class="register-button"><img src="14.png"onclick="submit()"></img></div>
+<div class="register-button"><img src="images/14.png"onclick="submit()"></img></div>
 </div>
 </form>
 </div>
-<div class="interpertation"><img src="5.png" ></img></div>
+<div class="interpertation"><img src="images/5.png" ></img></div>
 </body>
 </html>
   
