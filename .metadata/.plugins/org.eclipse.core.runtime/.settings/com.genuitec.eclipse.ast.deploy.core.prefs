@@ -1,0 +1,14 @@
+#Sat Nov 29 23:23:26 EST 2014
+myeclipseTomcatServer.Gastronomist.isDeployed=true
+myeclipseTomcatServer.Gastronomist.noFileCopy=false
+myeclipseTomcatServer.Gastronomist.contextRoot=/Gastronomist
+myeclipseTomcatServer.Gastronomist.shouldBackup=false
+myeclipseTomcatServer.Gastronomist.shouldOverwrite=false
+myeclipseTomcatServer.Gastronomist.deployIsOverProject=false
+myeclipseTomcatServer.Gastronomist.isExploded=true
+myeclipseTomcatServer.Gastronomist.type=WebDeployment
+myeclipseTomcatServer.Gastronomist.IEARProjectName=
+myeclipseTomcatServer.Gastronomist.altContextRoot=/Gastronomist
+eclipse.preferences.version=1
+myeclipseTomcatServer.Gastronomist.isUptoDate=true
+myeclipseTomcatServer.Gastronomist.deploymentPath=/Users/Vigery/GitHub/Web/.metadata/.me_tcat/webapps/Gastronomist
