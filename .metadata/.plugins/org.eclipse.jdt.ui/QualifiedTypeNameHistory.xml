@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="JavaBean.Normaluser"/>
+<fullyQualifiedTypeName name="JavaBean.Orders"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="JavaBean.OrderedDish"/>
+<fullyQualifiedTypeName name="JavaBean.Dish"/>
+<fullyQualifiedTypeName name="DAO.DatabaseManager"/>
+</qualifiedTypeNameHistroy>

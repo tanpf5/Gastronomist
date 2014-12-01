@@ -35,7 +35,7 @@ public class MyOrder extends HttpServlet {
 		DatabaseManager dbm = new DatabaseManager();
 		Collection<Orders> orders = dbm.findMyOrder(id);
 		request.setAttribute("orders", orders);
-		RequestDispatcher rd = request.getRequestDispatcher("test.do");
+		RequestDispatcher rd = request.getRequestDispatcher("myOrder.jsp");
 		rd.forward(request, response);
 	}
 

@@ -1,0 +1,38 @@
+package JavaBean;
+
+import java.io.Serializable;
+
+public class OrderedDish implements Serializable {
+	
+	private int dish_id;
+	private int quantity;
+	private int total_price;
+	
+	public OrderedDish() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public OrderedDish(int dish_id, int quantity) {
+		super();
+		this.dish_id = dish_id;
+		this.quantity = quantity;
+	}
+
+	public int getDish_id() {
+		return dish_id;
+	}
+
+	public void setDish_id(int dish_id) {
+		this.dish_id = dish_id;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	
+}

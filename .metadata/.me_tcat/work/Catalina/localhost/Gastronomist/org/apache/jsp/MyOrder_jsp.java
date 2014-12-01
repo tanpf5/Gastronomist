@@ -4,8 +4,9 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 import java.util.*;
+import JavaBean.Orders;
 
-public final class MyOrder_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class myOrder_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -55,6 +56,7 @@ public final class MyOrder_jsp extends org.apache.jasper.runtime.HttpJspBase
 
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+Collection<Orders> orders = (Collection<Orders>) request.getAttribute("orders");
 
       out.write("\n");
       out.write("\n");
@@ -72,14 +74,55 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       out.write("\t<meta http-equiv=\"expires\" content=\"0\">    \n");
       out.write("\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n");
       out.write("\t<meta http-equiv=\"description\" content=\"This is my page\">\n");
-      out.write("\t<link href=\"order.css\" type=\"text/css\" rel=\"stylesheet\">\n");
+      out.write("\t<link href=\"css/myOrder.css\" type=\"text/css\" rel=\"stylesheet\">\n");
       out.write("\n");
       out.write("  </head>\n");
       out.write("  \n");
       out.write("  <body>\n");
-      out.write("    <div class=\"top-blank\"><img src=\"imgaes/15.png\"></img></div>\n");
+      out.write("    <div class=\"top-blank\"><img src=\"images/15.png\"></img></div>\n");
       out.write("<div class=\"background-register2\">\n");
       out.write("<div class=\"register-blank\">\n");
+      out.write("<table border=1 width=500px>\n");
+      out.write("<tr bgcolor=pink><th>restaurant</th><th>dish</th><th>price</th><th>mark</th><th>submit</th></tr>\n");
+ 		Iterator<Orders> iterator = orders.iterator();
+		while (iterator.hasNext()) {
+			Orders order = iterator.next();
+			String rest_name = order.getDish_id().getRest_id().getRe_name();
+			String dish_name = order.getDish_id().getDi_name();
+			double price = order.getDish_id().getPrice();
+			int mark = order.getDish_id().getMark();
+			int order_id = order.getId();
+			if (mark == 0) {
+			
+      out.write("\n");
+      out.write("\t\t\t<tr>\n");
+      out.write("\t\t\t<td>");
+      out.print(rest_name);
+      out.write("</td>\n");
+      out.write("\t\t\t<td>");
+      out.print(dish_name);
+      out.write("</td>\n");
+      out.write("\t\t\t<td>");
+      out.print(price);
+      out.write("</td>\n");
+      out.write("\t\t\t<td><select name=\"mark\">\n");
+      out.write("\t\t\t\t<option value=1>1</option>\n");
+      out.write("\t\t\t\t<option value=2>2</option>\n");
+      out.write("\t\t\t\t<option value=3>3</option>\n");
+      out.write("\t\t\t\t<option value=4>4</option>\n");
+      out.write("\t\t\t\t<option value=5>5</option> \n");
+      out.write("\t\t\t\t</select></td>\n");
+      out.write("\t\t\t<td><input type=button value=submit \n");
+      out.write("\t\t\tonclick=\"javascript:window.location.href='mark.do?id=");
+      out.print(order_id);
+      out.write("'\"/>\n");
+      out.write("\t\t\t</td>\n");
+      out.write("\t\t\t</tr>\n");
+      out.write("\t\t");
+}}
+
+      out.write("\n");
+      out.write("</table>\n");
       out.write("<div class=\"register-button\"><img src=\"images/19.jpg\" ></img></div>\n");
       out.write("</div>\n");
       out.write("</div>\n");

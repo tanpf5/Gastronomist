@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="16" version="2.0">
+<workbench progressCount="46" version="2.0">
 <workbenchAdvisor/>
-<window height="769" maximized="true" width="1154" x="0" y="23">
+<window height="773" maximized="true" width="640" x="0" y="23">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -26,11 +26,12 @@
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="54" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.NoSourceFoundEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="com.genuitec.ui.browser.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.genuitec.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="UserSeparator" itemType="typeSeparator"/>
@@ -48,129 +49,65 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
-<part id="14"/>
-<part id="15"/>
-<part id="16"/>
-<part id="17"/>
-<part id="18"/>
-<part id="19"/>
-<part id="20"/>
-<part id="21"/>
-<part id="22"/>
-<part id="23"/>
-<part id="24"/>
-<part id="25"/>
-<part id="26"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AdministratorDAO.java" partName="AdministratorDAO.java" path="/Users/Vigery/GitHub/Web/Gastronomist/src/DAO/AdministratorDAO.java" title="AdministratorDAO.java" tooltip="Gastronomist/src/DAO/AdministratorDAO.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/src/DAO/AdministratorDAO.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Login.java" partName="Login.java" path="/Users/Vigery/GitHub/Web/Gastronomist/src/Servlet/Login.java" title="Login.java" tooltip="Gastronomist/src/Servlet/Login.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/src/Servlet/Login.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="166" selectionOffset="1192" selectionTopPixel="245"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginCl.java" partName="LoginCl.java" path="/Users/Vigery/GitHub/Web/testShooping/src/com/sp/serlvet/LoginCl.java" title="LoginCl.java" tooltip="testShooping/src/com/sp/serlvet/LoginCl.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testShooping/src/com/sp/serlvet/LoginCl.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="50" selectionOffset="1340" selectionTopPixel="372"/>
-</editor>
-<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="homePage.jsp" partName="homePage.jsp" path="/Users/Vigery/GitHub/Web/Gastronomist/WebRoot/homePage.jsp" title="homePage.jsp" tooltip="Gastronomist/WebRoot/homePage.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/WebRoot/homePage.jsp"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Normaluser.java" partName="Normaluser.java" path="/Users/Vigery/GitHub/Web/Gastronomist/src/JavaBean/Normaluser.java" title="Normaluser.java" tooltip="Gastronomist/src/JavaBean/Normaluser.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/src/JavaBean/Normaluser.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="33"/>
-</editor>
-<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="right.jsp" partName="right.jsp" path="/Users/Vigery/GitHub/Web/testShooping/WebRoot/right.jsp" title="right.jsp" tooltip="testShooping/WebRoot/right.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testShooping/WebRoot/right.jsp"/>
-</editor>
-<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="signup.jsp" partName="signup.jsp" path="/Users/Vigery/GitHub/Web/Gastronomist/WebRoot/signup.jsp" title="signup.jsp" tooltip="Gastronomist/WebRoot/signup.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/WebRoot/signup.jsp"/>
-</editor>
-<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="head.jsp" partName="head.jsp" path="/Users/Vigery/GitHub/Web/testShooping/WebRoot/head.jsp" title="head.jsp" tooltip="testShooping/WebRoot/head.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testShooping/WebRoot/head.jsp"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Signup.java" partName="Signup.java" path="/Users/Vigery/GitHub/Web/Gastronomist/src/Servlet/Signup.java" title="Signup.java" tooltip="Gastronomist/src/Servlet/Signup.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/src/Servlet/Signup.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1832" selectionTopPixel="544"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DatabaseManager.java" partName="DatabaseManager.java" path="/Users/Vigery/GitHub/Web/Gastronomist/src/DAO/DatabaseManager.java" title="DatabaseManager.java" tooltip="Gastronomist/src/DAO/DatabaseManager.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/src/DAO/DatabaseManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindDishes.java" partName="FindDishes.java" path="/Users/Vigery/GitHub/Web/Gastronomist/src/Servlet/FindDishes.java" title="FindDishes.java" tooltip="Gastronomist/src/Servlet/FindDishes.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/src/Servlet/FindDishes.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="419" selectionTopPixel="0"/>
-</editor>
 <editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" partName="index.jsp" path="/Users/Vigery/GitHub/Web/Gastronomist/WebRoot/index.jsp" title="index.jsp" tooltip="Gastronomist/WebRoot/index.jsp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/WebRoot/index.jsp"/>
 </editor>
-<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="MyOrder.jsp" partName="MyOrder.jsp" path="/Users/Vigery/GitHub/Web/Gastronomist/WebRoot/MyOrder.jsp" title="MyOrder.jsp" tooltip="Gastronomist/WebRoot/MyOrder.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/WebRoot/MyOrder.jsp"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.ClassFileEditor" name="AbstractPlainSocketImpl.class" partName="AbstractPlainSocketImpl.class" title="AbstractPlainSocketImpl.class" tooltip="java.net.AbstractPlainSocketImpl" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=Gastronomist/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_05.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.net(AbstractPlainSocketImpl.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11513" selectionTopPixel="4590"/>
 </editor>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="order.css" partName="order.css" path="/Users/Vigery/GitHub/Web/Gastronomist/WebRoot/order.css" title="order.css" tooltip="Gastronomist/WebRoot/order.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/WebRoot/order.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="100" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="PlainSocketImpl.class" partName="PlainSocketImpl.class" title="PlainSocketImpl.class" tooltip="java.net.PlainSocketImpl" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=Gastronomist/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_05.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.net(PlainSocketImpl.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3" selectionTopPixel="0"/>
 </editor>
-<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="Order.jsp" partName="Order.jsp" path="/Users/Vigery/GitHub/Web/Gastronomist/WebRoot/Order.jsp" title="Order.jsp" tooltip="Gastronomist/WebRoot/Order.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/WebRoot/Order.jsp"/>
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="Socket.class" partName="Socket.class" title="Socket.class" tooltip="java.net.Socket" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=Gastronomist/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_05.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.net(Socket.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="42" selectionOffset="23800" selectionTopPixel="8340"/>
 </editor>
-<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="Reset.jsp" partName="Reset.jsp" path="/Users/Vigery/GitHub/Web/Gastronomist/WebRoot/Reset.jsp" title="Reset.jsp" tooltip="Gastronomist/WebRoot/Reset.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/WebRoot/Reset.jsp"/>
-</editor>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="homePage.css" partName="homePage.css" path="/Users/Vigery/GitHub/Web/Gastronomist/WebRoot/css/homePage.css" title="homePage.css" tooltip="Gastronomist/WebRoot/css/homePage.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/WebRoot/css/homePage.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1541" selectionTopPixel="1512"/>
-</editor>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="homePage2.css" partName="homePage2.css" path="/Users/Vigery/GitHub/Web/Gastronomist/WebRoot/css/homePage2.css" title="homePage2.css" tooltip="Gastronomist/WebRoot/css/homePage2.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/WebRoot/css/homePage2.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="2147"/>
-</editor>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="index.css" partName="index.css" path="/Users/Vigery/GitHub/Web/Gastronomist/WebRoot/css/index.css" title="index.css" tooltip="Gastronomist/WebRoot/css/index.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/WebRoot/css/index.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2177" selectionTopPixel="1660"/>
-</editor>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="index2.css" partName="index2.css" path="/Users/Vigery/GitHub/Web/Gastronomist/WebRoot/css/index2.css" title="index2.css" tooltip="Gastronomist/WebRoot/css/index2.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/WebRoot/css/index2.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="2147"/>
-</editor>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="signup.css" partName="signup.css" path="/Users/Vigery/GitHub/Web/Gastronomist/WebRoot/css/signup.css" title="signup.css" tooltip="Gastronomist/WebRoot/css/signup.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Gastronomist/WebRoot/css/signup.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3514" selectionTopPixel="4097"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="/Users/Vigery/GitHub/Web/testShooping/src/com/sp/model/Test.java" title="Test.java" tooltip="testShooping/src/com/sp/model/Test.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testShooping/src/com/sp/model/Test.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="242" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="Method.class" partName="Method.class" title="Method.class" tooltip="java.lang.reflect.Method" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=Gastronomist/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_05.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang.reflect(Method.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="36" selectionOffset="17910" selectionTopPixel="6750"/>
 </editor>
 </editors>
 <views>
-<view id="com.genuitec.eclipse.ui.HTMLView" partName="Web Browser"/>
-<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
-<view id="com.genuitec.eclipse.ast.deploy.core.serverview" partName="Servers"/>
-<view id="uky.article.imageviewer.views.ImageView" partName="Image Preview">
+<view id="com.genuitec.eclipse.ui.HTMLView" partName="Web Browser">
 <viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Type Hierarchy"/>
-<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<view id="uky.article.imageviewer.views.ImageView" partName="Image Preview">
 <viewState/>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
 </view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
+<viewState/>
+</view>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
+<view id="com.genuitec.javascript.debug.ui.scriptView" partName="JavaScript Scripts Inspector"/>
+<view id="com.genuitec.eclipse.ast.deploy.core.serverview" partName="Servers"/>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="622"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -178,9 +115,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -212,12 +146,11 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
+<perspectives activePart="org.eclipse.jdt.ui.ClassFileEditor" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="com.genuitec.myeclipse.actions.deploytools"/>
@@ -309,11 +242,11 @@
 <perspective_action id="com.genuitec.eclipse.web20.perspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.jdt.ui.TypeHierarchy"/>
 <view id="uky.article.imageviewer.views.ImageView"/>
 <view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
@@ -336,7 +269,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.19980314" ratioLeft="203" ratioRight="813" relationship="2" relative="cvslocation"/>
+<info part="org.eclipse.ui.editorss" ratio="0.19070134" ratioLeft="242" ratioRight="1027" relationship="2" relative="cvslocation"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@7213bc54" ratio="0.7490775" ratioLeft="609" ratioRight="204" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
@@ -356,7 +289,7 @@
 </folder>
 </info>
 <info folder="true" part="bottom" ratio="0.74963397" ratioLeft="512" ratioRight="171" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="com.genuitec.eclipse.ui.HTMLView" label="Web Browser"/>
@@ -397,114 +330,329 @@
 </mainWindow>
 </layout>
 </perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.deploytools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.test.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.desktop"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.screencapture"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.examples.actionSet"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.hibernatetools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.webtools"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.j2eedt.core.ejb"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.jsftools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.faceletstools"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.maven.pro.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.jpatools"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.portlet.portletactions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.reporting"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.springtools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.strutstools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.restsupport"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.ws.xfire.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.icefaces"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.about.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.product.actions"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.aop.ui.ActionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.aop.ui.matcher.actionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.beans.ui.actionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.beans.search.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.web20.actionset"/>
+<alwaysOnActionSet id="fr.obeo.acceleo.gen.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.datatools.sqltools.result.resultView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.jdt.debug.ui.DisplayView"/>
+<new_wizard_action id="org.eclipse.birt.report.designer.ui.ide.wizards.NewReportWizard"/>
+<new_wizard_action id="org.eclipse.birt.report.designer.ui.ide.wizards.NewTemplateWizard"/>
+<new_wizard_action id="org.eclipse.birt.report.designer.ui.wizards.NewLibraryWizard"/>
+<perspective_action id="com.genuitec.eclipse.hibernate.perspective.HibernatePerspective"/>
+<perspective_action id="com.genuitec.dali.adapter.persistencePerspective"/>
+<perspective_action id="com.genuitec.eclipse.sqlexplorer.perspectives.SQLExplorerPluginPerspective"/>
+<perspective_action id="com.genuitec.eclipse.uml.umlPerspective"/>
+<perspective_action id="com.genuitec.myeclipse.perspective.myeclipseperspective"/>
+<perspective_action id="com.genuitec.eclipse.web20.perspective"/>
+<perspective_action id="com.genuitec.eclipse.reporting.ReportPerspective"/>
+<perspective_action id="org.eclipse.datatools.sqltools.sqleditor.perspectives.EditorPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.wst.jsdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.wst.xml.ui.perspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="com.genuitec.javascript.debug.ui.scriptView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.debug.ui.ExpressionView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="915" ratioRight="305" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7492492" ratioLeft="499" ratioRight="167" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="com.genuitec.javascript.debug.ui.scriptView" label="JavaScript Scripts Inspector"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.atf.mozilla.ide.ui.views.console" label="LabelNotFound"/>
+<page content="org.eclipse.atf.mozilla.ide.ui.views.xhrmon" label="LabelNotFound"/>
+<page content="org.eclipse.datatools.sqltools.result.resultView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
+<page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
+<page content="org.eclipse.wst.xsl.jaxp.debug.ui.view1" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.4488978" ratioLeft="224" ratioRight="275" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="915" ratioRight="305" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<page content="org.eclipse.atf.mozilla.ide.ui.views.inspector" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="610" ratioRight="610" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<page content="org.eclipse.atf.mozilla.ide.debug.ui.scriptview" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
 </perspectives>
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/Servlet/Login.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/Gastronomist/WebRoot/homePage.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/testShooping/WebRoot/right.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/Gastronomist/WebRoot/signup.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/testShooping/WebRoot/head.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/Servlet/Signup.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/DAO/DatabaseManager.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/DAO/UsersDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/Gastronomist/WebRoot/myOrder.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/Servlet/Mark.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/DAO/NormaluserDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/DAO/DishDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/DAO/DatabaseManager.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/DAO/OrdersDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/Servlet/Cart.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/Servlet/ChangeInfo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/Servlet/Checkout.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/Servlet/FindDishes.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/Servlet/Login.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/Servlet/MyOrder.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/Servlet/Signup.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Gastronomist/src/Servlet/Test.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/Gastronomist/WebRoot/index.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/Gastronomist/WebRoot/MyOrder.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/Gastronomist/WebRoot/order.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/Gastronomist/WebRoot/Order.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/Gastronomist/WebRoot/Reset.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/Gastronomist/WebRoot/css/homePage.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/Gastronomist/WebRoot/css/homePage2.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/Gastronomist/WebRoot/css/index.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/Gastronomist/WebRoot/css/index2.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/Gastronomist/WebRoot/css/signup.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/testShooping/src/com/sp/model/Test.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Gastronomist/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_05.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.net(AbstractPlainSocketImpl.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Gastronomist/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_05.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.net(PlainSocketImpl.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Gastronomist/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_05.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.net(Socket.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Gastronomist/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_05.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang.reflect(Method.class"/>
 </editors>
-<item historyLabel="signup.jsp" index="3"/>
-<item historyLabel="head.jsp" index="4"/>
-<item historyLabel="signup.jsp" index="3"/>
-<item historyLabel="homePage.jsp" index="1"/>
-<item historyLabel="Login.java" index="0">
-<position info="not_deleted" x="1358" y="0"/>
+<item historyLabel="DatabaseManager.java" index="4">
+<position info="not_deleted" x="2749" y="2"/>
 </item>
-<item historyLabel="Signup.java" index="5">
+<item historyLabel="DatabaseManager.java" index="4">
+<position info="not_deleted" x="2753" y="7"/>
+</item>
+<item historyLabel="DatabaseManager.java" index="4">
+<position info="not_deleted" x="2762" y="7"/>
+</item>
+<item historyLabel="DatabaseManager.java" index="4">
+<position info="not_deleted" x="2995" y="0"/>
+</item>
+<item historyLabel="DishDAO.java" index="3">
+<position info="not_deleted" x="3200" y="0"/>
+</item>
+<item historyLabel="NormaluserDAO.java" index="2">
+<position info="not_deleted" x="3600" y="558"/>
+</item>
+<item historyLabel="OrdersDAO.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Login.java" index="0">
-<position info="not_deleted" x="1192" y="166"/>
+<item historyLabel="DishDAO.java" index="3">
+<position info="not_deleted" x="3239" y="0"/>
 </item>
-<item historyLabel="Signup.java" index="5">
-<position info="not_deleted" x="1494" y="0"/>
+<item historyLabel="NormaluserDAO.java" index="2">
+<position info="not_deleted" x="3599" y="0"/>
 </item>
-<item historyLabel="DatabaseManager.java" index="6">
+<item historyLabel="DishDAO.java" index="3">
+<position info="not_deleted" x="3239" y="0"/>
+</item>
+<item historyLabel="DatabaseManager.java" index="4">
+<position info="not_deleted" x="2826" y="49"/>
+</item>
+<item historyLabel="myOrder.jsp" index="0"/>
+<item historyLabel="DishDAO.java" index="3">
+<position info="not_deleted" x="4023" y="0"/>
+</item>
+<item historyLabel="DatabaseManager.java" index="4">
+<position info="not_deleted" x="2826" y="49"/>
+</item>
+<item historyLabel="DatabaseManager.java" index="4">
+<position info="not_deleted" x="2966" y="2"/>
+</item>
+<item historyLabel="DatabaseManager.java" index="4">
+<position info="not_deleted" x="2970" y="7"/>
+</item>
+<item historyLabel="DatabaseManager.java" index="4">
+<position info="not_deleted" x="2979" y="7"/>
+</item>
+<item historyLabel="DatabaseManager.java" index="4">
+<position info="not_deleted" x="2988" y="5"/>
+</item>
+<item historyLabel="DatabaseManager.java" index="4">
+<position info="not_deleted" x="3052" y="0"/>
+</item>
+<item historyLabel="DishDAO.java" index="3">
+<position info="not_deleted" x="4023" y="0"/>
+</item>
+<item historyLabel="DishDAO.java" index="3">
+<position info="not_deleted" x="3725" y="0"/>
+</item>
+<item historyLabel="DishDAO.java" index="3">
+<position info="not_deleted" x="3910" y="0"/>
+</item>
+<item historyLabel="DishDAO.java" index="3">
+<position info="not_deleted" x="4023" y="0"/>
+</item>
+<item historyLabel="Cart.java" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="UsersDAO.java" index="7">
+<item historyLabel="ChangeInfo.java" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="NormaluserDAO.java" index="8">
-<position info="not_deleted" x="2330" y="0"/>
-</item>
-<item historyLabel="Signup.java" index="5">
-<position info="not_deleted" x="1494" y="0"/>
-</item>
-<item historyLabel="Signup.java" index="5">
-<position info="not_deleted" x="1832" y="0"/>
-</item>
-<item historyLabel="Login.java" index="0">
-<position info="not_deleted" x="1192" y="166"/>
+<item historyLabel="Checkout.java" index="8">
+<position info="not_deleted" x="1499" y="0"/>
 </item>
 <item historyLabel="FindDishes.java" index="9">
-<position info="not_deleted" x="419" y="0"/>
+<position info="not_deleted" x="1153" y="103"/>
 </item>
-<item historyLabel="homePage.jsp" index="1"/>
-<item historyLabel="signup.jsp" index="3"/>
-<item historyLabel="right.jsp" index="2"/>
-<item historyLabel="homePage.jsp" index="1"/>
-<item historyLabel="index.jsp" index="10"/>
-<item historyLabel="index.jsp" index="10"/>
-<item historyLabel="homePage.jsp" index="1"/>
-<item historyLabel="signup.jsp" index="3"/>
-<item historyLabel="MyOrder.jsp" index="11"/>
-<item historyLabel="order.css" index="12">
+<item historyLabel="Login.java" index="10">
+<position info="not_deleted" x="1157" y="105"/>
+</item>
+<item historyLabel="Mark.java" index="1">
+<position info="not_deleted" x="911" y="0"/>
+</item>
+<item historyLabel="MyOrder.java" index="11">
+<position info="not_deleted" x="1048" y="0"/>
+</item>
+<item historyLabel="Signup.java" index="12">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Order.jsp" index="13"/>
-<item historyLabel="Reset.jsp" index="14"/>
-<item historyLabel="homePage.jsp" index="1"/>
-<item historyLabel="index.jsp" index="10"/>
-<item historyLabel="MyOrder.jsp" index="11"/>
-<item historyLabel="signup.jsp" index="3"/>
-<item historyLabel="homePage.jsp" index="1"/>
-<item historyLabel="index.jsp" index="10"/>
-<item historyLabel="MyOrder.jsp" index="11"/>
-<item historyLabel="order.css" index="12">
-<position info="not_deleted" x="100" y="0"/>
+<item historyLabel="Login.java" index="10">
+<position info="not_deleted" x="1176" y="0"/>
 </item>
-<item historyLabel="Order.jsp" index="13"/>
-<item historyLabel="Reset.jsp" index="14"/>
-<item historyLabel="signup.jsp" index="3"/>
-<item historyLabel="Reset.jsp" index="14"/>
-<item historyLabel="homePage.css" index="15">
-<position info="not_deleted" x="1541" y="0"/>
+<item historyLabel="Test.java" index="13">
+<position info="not_deleted" x="1661" y="0"/>
 </item>
-<item historyLabel="homePage2.css" index="16">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ChangeInfo.java" index="7">
+<position info="not_deleted" x="1441" y="0"/>
 </item>
-<item historyLabel="index.css" index="17">
-<position info="not_deleted" x="2177" y="0"/>
+<item historyLabel="Signup.java" index="12">
+<position info="not_deleted" x="1370" y="70"/>
 </item>
-<item historyLabel="index2.css" index="18">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Test.java" index="13">
+<position info="not_deleted" x="1661" y="0"/>
 </item>
-<item historyLabel="signup.css" index="19">
-<position info="not_deleted" x="3514" y="0"/>
+<item historyLabel="Test.java" index="13">
+<position info="not_deleted" x="1537" y="0"/>
 </item>
-<item active="true" historyLabel="Test.java" index="20">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Test.java" index="13">
+<position info="not_deleted" x="1661" y="0"/>
+</item>
+<item historyLabel="Test.java" index="13">
+<position info="not_deleted" x="1499" y="4"/>
+</item>
+<item historyLabel="Test.java" index="13">
+<position info="not_deleted" x="1661" y="0"/>
+</item>
+<item historyLabel="Signup.java" index="12">
+<position info="not_deleted" x="1370" y="70"/>
+</item>
+<item historyLabel="Login.java" index="10">
+<position info="not_deleted" x="1176" y="0"/>
+</item>
+<item historyLabel="index.jsp" index="14"/>
+<item historyLabel="AbstractPlainSocketImpl.class" index="15">
+<position info="not_deleted" x="11310" y="54"/>
+</item>
+<item historyLabel="PlainSocketImpl.class" index="16">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="AbstractPlainSocketImpl.class" index="15">
+<position info="not_deleted" x="11310" y="54"/>
+</item>
+<item historyLabel="Socket.class" index="17">
+<position info="not_deleted" x="23800" y="42"/>
+</item>
+<item historyLabel="Method.class" index="18">
+<position info="not_deleted" x="17910" y="36"/>
+</item>
+<item historyLabel="PlainSocketImpl.class" index="16">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item active="true" historyLabel="AbstractPlainSocketImpl.class" index="15">
+<position info="not_deleted" x="11310" y="54"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -512,6 +660,15 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topleft"/>
+<trimItem IMemento.internal.id="bottomleft"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@7213bc54"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@6db1694e"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -519,45 +676,40 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="testShooping/src/com/sp/model/Test.java">
-<persistable path="/testShooping/src/com/sp/model/Test.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Method.class" tooltip="java.lang.reflect.Method">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Gastronomist/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_05.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang.reflect(Method.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="signup.css" tooltip="Gastronomist/WebRoot/css/signup.css">
-<persistable path="/Gastronomist/WebRoot/css/signup.css"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Socket.class" tooltip="java.net.Socket">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Gastronomist/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_05.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.net(Socket.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="index2.css" tooltip="Gastronomist/WebRoot/css/index2.css">
-<persistable path="/Gastronomist/WebRoot/css/index2.css"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="PlainSocketImpl.class" tooltip="java.net.PlainSocketImpl">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Gastronomist/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_05.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.net(PlainSocketImpl.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="index.css" tooltip="Gastronomist/WebRoot/css/index.css">
-<persistable path="/Gastronomist/WebRoot/css/index.css"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="homePage2.css" tooltip="Gastronomist/WebRoot/css/homePage2.css">
-<persistable path="/Gastronomist/WebRoot/css/homePage2.css"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="homePage.css" tooltip="Gastronomist/WebRoot/css/homePage.css">
-<persistable path="/Gastronomist/WebRoot/css/homePage.css"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="Reset.jsp" tooltip="Gastronomist/WebRoot/Reset.jsp">
-<persistable path="/Gastronomist/WebRoot/Reset.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="Order.jsp" tooltip="Gastronomist/WebRoot/Order.jsp">
-<persistable path="/Gastronomist/WebRoot/Order.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="order.css" tooltip="Gastronomist/WebRoot/order.css">
-<persistable path="/Gastronomist/WebRoot/order.css"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="MyOrder.jsp" tooltip="Gastronomist/WebRoot/MyOrder.jsp">
-<persistable path="/Gastronomist/WebRoot/MyOrder.jsp"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="AbstractPlainSocketImpl.class" tooltip="java.net.AbstractPlainSocketImpl">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Gastronomist/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_05.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.net(AbstractPlainSocketImpl.class"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" tooltip="Gastronomist/WebRoot/index.jsp">
 <persistable path="/Gastronomist/WebRoot/index.jsp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindDishes.java" tooltip="Gastronomist/src/Servlet/FindDishes.java">
-<persistable path="/Gastronomist/src/Servlet/FindDishes.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Signup.java" tooltip="Gastronomist/src/Servlet/Signup.java">
+<persistable path="/Gastronomist/src/Servlet/Signup.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Cart.java" tooltip="Gastronomist/src/Servlet/Cart.java">
+<persistable path="/Gastronomist/src/Servlet/Cart.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OrdersDAO.java" tooltip="Gastronomist/src/DAO/OrdersDAO.java">
+<persistable path="/Gastronomist/src/DAO/OrdersDAO.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UsersDAO.java" tooltip="Gastronomist/src/DAO/UsersDAO.java">
+<persistable path="/Gastronomist/src/DAO/UsersDAO.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DatabaseManager.java" tooltip="Gastronomist/src/DAO/DatabaseManager.java">
+<persistable path="/Gastronomist/src/DAO/DatabaseManager.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NormaluserDAO.java" tooltip="Gastronomist/src/DAO/NormaluserDAO.java">
 <persistable path="/Gastronomist/src/DAO/NormaluserDAO.java"/>

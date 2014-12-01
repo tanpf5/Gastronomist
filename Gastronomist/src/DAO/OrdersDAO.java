@@ -47,6 +47,23 @@ public class OrdersDAO {
 		}		
 	}
 	
+	public void updateOrder(int id, int mark){
+		//Orders order = findById(id);
+		try {
+			String update = "update Orders "
+						   +"set mark = ? "
+						   +"where id = ?";
+			PreparedStatement pstmt = conn.prepareStatement(update);
+			pstmt.setInt(1, mark);
+			pstmt.setInt(2, id);
+			pstmt.executeUpdate();
+		}
+		catch(SQLException e) {
+			dbm.cleanup();
+			throw new RuntimeException("error updating order", e);
+		}		
+	}
+	
 	public int findNextOrderId(){
 		try {
 			int lastId = 0;
@@ -93,6 +110,33 @@ public class OrdersDAO {
 			throw new RuntimeException("error finding restaurant", e);
 		}
 	}
-	
+	public Orders findById(int i) {
+		try {
+			String qry = "select * "
+						+"from Orders "
+						+"where id = ?";
+			PreparedStatement pstmt = conn.prepareStatement(qry);
+			pstmt.setInt(1, i);
+			ResultSet rs = pstmt.executeQuery();
+			
+			if (!rs.next())
+				return null;
+			
+			int id = rs.getInt("id");
+			Normaluser user_id = dbm.checkInfo(rs.getInt("user_id"));
+			Restaurant rest_id = dbm.findRestaurant(rs.getInt("rest_id")) ;
+			Dish dish_id = dbm.findDishById(rs.getInt("dish_id"));
+			double price = rs.getDouble("price");
+			String tele_num = rs.getString("tele_num");
+			String address = rs.getString("address");
+			int mark = rs.getInt("mark");
+			return new Orders(this, id, user_id, dish_id, price, tele_num, address, mark);
+			
+			
+		} catch (SQLException e) {
+			dbm.cleanup();
+			throw new RuntimeException("error finding restaurant", e);
+		}
+	}
 
 }

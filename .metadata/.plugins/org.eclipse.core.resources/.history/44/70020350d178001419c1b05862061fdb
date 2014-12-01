@@ -1,0 +1,7 @@
+package JavaBean;
+
+import java.io.Serializable;
+
+public class OrderedDish implements Serializable {
+
+}

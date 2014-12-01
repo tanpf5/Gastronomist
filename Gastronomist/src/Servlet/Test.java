@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.Iterator;
 import java.io.PrintWriter;
-import java.util.Collection;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -33,20 +32,9 @@ public class Test extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		String username=request.getParameter("username");
-		String password=request.getParameter("password");
 		DatabaseManager dbm = new DatabaseManager();
-		Collection<Dish> dishes = (Collection<Dish>) request.getAttribute("dishes");
+	/*  Collection<Dish> dishes = (Collection<Dish>) request.getAttribute("dishes");
 		Collection<Orders> orders = (Collection<Orders>) request.getAttribute("orders");
-		
-		//response.sendRedirect(url); 
-		/*Iterator<Orders> iterator = orders.iterator();
-		while (iterator.hasNext()) {
-			Orders order = iterator.next();
-			int id = order.getId();
-			
-			double price = order.getPrice();
-		}*/
 		Iterator<Dish> iterator = dishes.iterator();
 		while (iterator.hasNext()) {
 			Dish dish = iterator.next();
@@ -54,7 +42,11 @@ public class Test extends HttpServlet {
 			double price = dish.getPrice();
 			int times = dish.getTimes();
 			int mark = dish.getMark();
-		}
+		}*/
+		int id = dbm.findNextDishId();
+		boolean succ = dbm.insertDish(id, 1, "tofu", 3.99);
+		succ = dbm.updateDish(id, 1, "dumpling", 4.99);
+		dbm.deleteDish(id);
 	}
 
 	/**

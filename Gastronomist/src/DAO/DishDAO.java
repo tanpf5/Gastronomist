@@ -88,6 +88,80 @@ public class DishDAO {
 		}
 	}
 	
+	public boolean checkDuplicatedDishname(String dishname){
+		try {
+			String qry = "select * "
+						+"from Dish "
+						+"where di_name = ?";
+			PreparedStatement pstmt = conn.prepareStatement(qry);
+			pstmt.setString(1, dishname);
+			ResultSet rs = pstmt.executeQuery();
+			
+			if (!rs.next())
+				return false;
+			return true;
+			
+		}
+		catch (SQLException e) {
+			dbm.cleanup();
+			throw new RuntimeException("error finding dish", e);
+		}
+	}
+	
+	public boolean checkDuplicatedDishname(int id, String dishname){
+		try {
+			String qry = "select * "
+						+"from Dish "
+						+"where di_name = ?";
+			PreparedStatement pstmt = conn.prepareStatement(qry);
+			pstmt.setString(1, dishname);
+			ResultSet rs = pstmt.executeQuery();
+			
+			while (rs.next()) {
+				if (id != rs.getInt("id")) return true;
+			}
+			
+			return false;
+			
+		}
+		catch (SQLException e) {
+			dbm.cleanup();
+			throw new RuntimeException("error finding dish", e);
+		}
+	}
+	
+	public void updateDish(int id, int rest_id, String di_name, double price) {
+		try {
+			String update = "update Dish "
+						   +"set di_name = ?, price = ? "
+						   +"where id = ?";
+			PreparedStatement pstmt = conn.prepareStatement(update);
+			pstmt.setString(1, di_name);
+			pstmt.setDouble(2, price);
+			pstmt.setInt(3, id);
+			pstmt.executeUpdate();
+						
+		}
+		catch (SQLException e) {
+			dbm.cleanup();
+			throw new RuntimeException("error updating dish", e);
+		}
+	}
+	
+	public void deleteDish(int id) {
+		try {
+			String delete = "DELETE from Dish " +
+							"where id = ?";
+			PreparedStatement pstmt = conn.prepareStatement(delete);
+			pstmt.setInt(1, id);
+			pstmt.executeUpdate();
+		}
+		catch (SQLException e) {
+			dbm.cleanup();
+			throw new RuntimeException("error deleting dish", e);
+		}
+	}
+	
 	public Dish findById(int i) {
 		try {
 			String qry = "select * "
@@ -114,4 +188,5 @@ public class DishDAO {
 			throw new RuntimeException("error finding restaurant", e);
 		}
 	}
+	
 }

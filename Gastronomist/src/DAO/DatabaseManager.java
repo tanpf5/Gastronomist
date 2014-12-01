@@ -78,6 +78,10 @@ public class DatabaseManager {
 		return true;
 	}
 	
+	public void updateOrder(int id, int mark) {
+		ordersDAO.updateOrder(id, mark);
+	}
+	
 	public Restaurant findRestaurant(int id) {
 		return restaurantDAO.find(id);
 	}
@@ -90,8 +94,20 @@ public class DatabaseManager {
 		return dishDAO.findAllDishByRest(id);
 	}
 	
-	public void insertDish(int id, int rest_id, String di_name, double price){
+	public boolean insertDish(int id, int rest_id, String di_name, double price){
+		if (dishDAO.checkDuplicatedDishname(di_name)) return false;
 		dishDAO.insertDish(id, rest_id, di_name, price);
+		return true;
+	}
+	
+	public boolean updateDish(int id, int rest_id, String di_name, double price) {
+		if (dishDAO.checkDuplicatedDishname(id, di_name)) return false;
+		dishDAO.updateDish(id, rest_id, di_name, price);
+		return true;
+	}
+	
+	public void deleteDish(int id) {
+		dishDAO.deleteDish(id);
 	}
 	
 	public int findNextDishId(){

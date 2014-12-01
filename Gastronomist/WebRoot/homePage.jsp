@@ -89,7 +89,7 @@ function change2(obj){
 	<div id="e" class="e" ><img src="images/dacan5.jpg"></img></div>
 	<div id="f" class="f" ><img src="images/dacan6.jpg"></img></div>
 	</div>
-	<div class="div18"><a href="dish.do?id=<%=1 %>"><img id="w" src="images/dacan1.jpg" style="width:250px;height:250px;margin-left:39px;margin-top:40px;"></img></a>
+	<div class="div18"><a href="dish.do?id=<%=3 %>"><img id="w" src="images/dacan1.jpg" style="width:250px;height:250px;margin-left:39px;margin-top:40px;"></img></a>
 	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:10px;"></img>
 	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:10px;"></img>
 	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:49px;margin-top:20px;"></img>

@@ -149,7 +149,7 @@ Normaluser user = (Normaluser) request.getSession().getAttribute("user");
       out.write("\t<div id=\"f\" class=\"f\" ><img src=\"images/dacan6.jpg\"></img></div>\n");
       out.write("\t</div>\n");
       out.write("\t<div class=\"div18\"><a href=\"dish.do?id=");
-      out.print(1 );
+      out.print(3 );
       out.write("\"><img id=\"w\" src=\"images/dacan1.jpg\" style=\"width:250px;height:250px;margin-left:39px;margin-top:40px;\"></img></a>\n");
       out.write("\t<img id=\"w\" src=\"hafo.jpg\" style=\"width:250px;height:250px;margin-left:20px;margin-top:10px;\"></img>\n");
       out.write("\t<img id=\"w\" src=\"hafo.jpg\" style=\"width:250px;height:250px;margin-left:20px;margin-top:10px;\"></img>\n");

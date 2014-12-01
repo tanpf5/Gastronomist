@@ -136,10 +136,10 @@ public class NormaluserDAO {
 	
 	public void updateInfo(int i, String un, String pw, String tn, String a) {
 		try {
-			String cmd = "update Normaluser "
+			String update = "update Normaluser "
 						+"set user_name = ?, password = ?, tele_num = ?, address = ? "
 						+"where id = ?";
-			PreparedStatement pstmt = conn.prepareStatement(cmd);
+			PreparedStatement pstmt = conn.prepareStatement(update);
 			pstmt.setString(1, un);
 			pstmt.setString(2, pw);
 			pstmt.setString(3, tn);
