@@ -7,3 +7,7 @@
 1417485747053	Rename resource 'order.css'
 1417498475127	Copy file
 1417498496834	Copy file
+1417526586600	Delete element
+1417526677886	Rename type 'deleteDish'
+1417526684583	Rename type 'editDish'
+1417526691594	Rename type 'addDish'

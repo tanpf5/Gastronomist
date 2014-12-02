@@ -50,6 +50,7 @@ public class Cart extends HttpServlet {
 				orderedDish.setTotal_price(orderedDish.getTotal_price() + price);
 				cart.add(orderedDish);
 				find = true;
+				if (find) break;
 			}
 		}
 		// update cart in session

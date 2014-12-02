@@ -70,19 +70,19 @@
     <description>This is the description of my J2EE component</description>
     <display-name>This is the display name of my J2EE component</display-name>
     <servlet-name>deleteDish</servlet-name>
-    <servlet-class>Servlet.deleteDish</servlet-class>
+    <servlet-class>Servlet.DeleteDish</servlet-class>
   </servlet>
   <servlet>
     <description>This is the description of my J2EE component</description>
     <display-name>This is the display name of my J2EE component</display-name>
     <servlet-name>editDish</servlet-name>
-    <servlet-class>Servlet.editDish</servlet-class>
+    <servlet-class>Servlet.EditDish</servlet-class>
   </servlet>
   <servlet>
     <description>This is the description of my J2EE component</description>
     <display-name>This is the display name of my J2EE component</display-name>
     <servlet-name>addDish</servlet-name>
-    <servlet-class>Servlet.addDish</servlet-class>
+    <servlet-class>Servlet.AddDish</servlet-class>
   </servlet>
 
 

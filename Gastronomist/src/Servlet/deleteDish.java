@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import DAO.DatabaseManager;
 
-public class deleteDish extends HttpServlet {
+public class DeleteDish extends HttpServlet {
 
 	/**
 	 * The doGet method of the servlet. <br>

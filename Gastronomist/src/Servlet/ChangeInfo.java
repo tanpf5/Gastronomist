@@ -45,6 +45,8 @@ public class ChangeInfo extends HttpServlet {
 			boolean succ = dbm.updateInfo(id, user_name, password, tele_num, address);
 			
 			if (succ) {
+				Normaluser new_user = dbm.checkInfo(id);
+				request.getSession().setAttribute("user", new_user);
 				String url="homePage.jsp";
 				url=new String(url.getBytes("GBK"),"ISO8859_1"); 
 				response.sendRedirect(url); 

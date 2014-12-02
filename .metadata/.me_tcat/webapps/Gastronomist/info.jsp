@@ -29,28 +29,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <form action="changeInfo.do" method=post>
 <div class="register-blank">
 <div class="Username"><div class="Username-helper">
- <font size="3" style="font-family:verdana">New Username</font>
+ <font size="3" style="font-family:verdana">Username</font>
  <font size="2" style="font-family:verdana;color:red">*</font>
  <input type="text"name="uid"style="width:250px;height:43px;margin-left:20px;">
  </div>
  </div>
 <div class="PassWord"><div class="PassWord-helper">
-<font size="3" style="font-family:verdana">New Password</font>
+<font size="3" style="font-family:verdana">Password</font>
 <font size="2" style="font-family:verdana;color:red">*</font>
 <input type="password"name="password"style="width:250px;height:43px;margin-left:20px;">
 </div></div>
 <div class="Confirm"><div class="Confirm-helper">
-<font size="3" style="font-family:verdana">New Confirm</font>
+<font size="3" style="font-family:verdana">Confirm</font>
 <font size="2" style="font-family:verdana;color:red">*</font>
 <input type="password"name="confirm"style="width:250px;height:43px;margin-left:20px;">
 </div></div>
 <div class="Address"><div class="Address-helper">
-<font size="3" style="font-family:verdana">New Address</font>
+<font size="3" style="font-family:verdana">Address</font>
 <font size="2" style="font-family:verdana;color:red">*</font>
 <input type="text"name="address"style="width:250px;height:43px;margin-left:20px;">
 </div></div>
 <div class="Tel"><div class="Tel-helper">
-<font size="3" style="font-family:verdana">New Telephone</font>
+<font size="3" style="font-family:verdana">Phone</font>
 <font size="2" style="font-family:verdana;color:red">*</font>
 <input type="text"name="tel"style="width:250px;height:43px;margin-left:20px;">
 </div></div>

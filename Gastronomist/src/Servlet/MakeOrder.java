@@ -39,7 +39,7 @@ public class MakeOrder extends HttpServlet {
 		String address = request.getParameter("address");
 		
 		Iterator<OrderedDish> iterator = cart.iterator();
-		while (!cart.isEmpty()) {
+		while (iterator.hasNext()) {
 			OrderedDish od = iterator.next();
 			int dish_id = od.getDish_id();
 			Dish dish = dbm.findDishById(dish_id);
@@ -49,8 +49,8 @@ public class MakeOrder extends HttpServlet {
 			dbm.updateDishTimes(dish_id, times + quantity);
 			int order_id = dbm.findNextOrderId();
 			dbm.insertOrder(order_id, user_id, dish_id, price, tele_num, address);
-			cart.remove(od);
 		}
+		cart.removeAll(cart);
 		String url="homePage.jsp";
 		url=new String(url.getBytes("GBK"),"ISO8859_1"); 
 		response.sendRedirect(url); 

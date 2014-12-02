@@ -12,7 +12,7 @@ int type = (Integer) request.getSession().getAttribute("type");
     <title>Gastronomist</title>
    <link href="css/homePage.css" type="text/css" rel="stylesheet">
    <link href="css/homePage2.css" type="text/css" rel="stylesheet" >
-   <script language="javascript">
+<script language="javascript">
   function change(val,obj){
     if(val=='a'){
 	   obj.style.backgroundColor="FFC12D";
@@ -84,7 +84,16 @@ function change2(obj){
                     out.println("hello  "+name); }
                     %><a href="myOrder.do">MYORDER</a><a href="info.jsp">INFO</a></div></div>
 <div class="div17">
-	
+	<div class="navi">
+	<ul>
+	<li onmouseover="change('a',this)" onmouseout="change2(this)"></li>
+	<li onmouseover="change('b',this)" onmouseout="change2(this)"></li>
+	<li onmouseover="change('c',this)" onmouseout="change2(this)"></li>
+	<li onmouseover="change('d',this)" onmouseout="change2(this)"></li>
+	<li onmouseover="change('e',this)" onmouseout="change2(this)"></li>
+	<li onmouseover="change('f',this)" onmouseout="change2(this)"></li>
+	</ul>
+	</div>
 	<!--shift右部-->
 	<div id="a" class="a" ><img src="images/dacan1.jpg"></img></div>
 	<div id="b" class="b" ><img src="images/dacan2.jpg"></img></div>
@@ -93,12 +102,13 @@ function change2(obj){
 	<div id="e" class="e" ><img src="images/dacan5.jpg"></img></div>
 	<div id="f" class="f" ><img src="images/dacan6.jpg"></img></div>
 	</div>
-	<div class="div18"><a href="dish.do?id=<%=3 %>"><img id="w" src="images/dacan1.jpg" style="width:250px;height:250px;margin-left:39px;margin-top:40px;"></img></a>
-	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:10px;"></img>
-	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:10px;"></img>
-	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:49px;margin-top:20px;"></img>
-	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:20px;"></img>
-	<img id="w" src="hafo.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:20px;"></img>
+	<div class="div18">
+	<a href="dish.do?id=<%=1 %>"><img id="w" src="images/dacan1.jpg" style="width:250px;height:250px;margin-left:39px;margin-top:40px;"></img></a>
+	<a href="dish.do?id=<%=2 %>"><img id="w" src="images/dacan2.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:10px;"></img></a>
+	<a href="dish.do?id=<%=3 %>"><img id="w" src="images/dacan3.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:10px;"></img></a>
+	<a href="dish.do?id=<%=4 %>"><img id="w" src="images/dacan4.jpg" style="width:250px;height:250px;margin-left:49px;margin-top:20px;"></img></a>
+	<a href="dish.do?id=<%=5 %>"><img id="w" src="images/dacan5.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:20px;"></img></a>
+	<a href="dish.do?id=<%=6 %>"><img id="w" src="images/dacan6.jpg" style="width:250px;height:250px;margin-left:20px;margin-top:20px;"></img></a>
 	<div class="interpertation"><img src="images/5.png"></img></div>                  
 	</div>
 </body>

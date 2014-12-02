@@ -2,6 +2,8 @@ package Servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Collection;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -10,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import DAO.DatabaseManager;
 import JavaBean.Normaluser;
+import JavaBean.OrderedDish;
 
 public class Signup extends HttpServlet {
 
@@ -45,7 +48,10 @@ public class Signup extends HttpServlet {
 			
 			if (succ) {
 				Normaluser user = dbm.checkInfo(id);
+				Collection<OrderedDish> cart = new ArrayList<OrderedDish>();
+				request.getSession().setAttribute("cart", cart);
 				request.getSession().setAttribute("user", user);
+				request.getSession().setAttribute("type", 1);
 				String url="homePage.jsp";
 				url=new String(url.getBytes("GBK"),"ISO8859_1"); 
 				response.sendRedirect(url); 
