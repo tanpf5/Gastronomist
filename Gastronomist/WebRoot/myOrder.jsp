@@ -28,12 +28,14 @@ Collection<Orders> orders = (Collection<Orders>) request.getAttribute("orders");
 <table border=1 width=500px>
 <tr bgcolor=pink><th>restaurant</th><th>dish</th><th>price</th><th>mark</th><th>submit</th></tr>
 <% 		Iterator<Orders> iterator = orders.iterator();
+		int i = 0;
 		while (iterator.hasNext()) {
 			Orders order = iterator.next();
+			i++;
 			String rest_name = order.getDish_id().getRest_id().getRe_name();
 			String dish_name = order.getDish_id().getDi_name();
 			double price = order.getDish_id().getPrice();
-			int mark = order.getDish_id().getMark();
+			int mark = order.getMark();
 			int order_id = order.getId();
 			if (mark == 0) {
 			%>
@@ -41,7 +43,7 @@ Collection<Orders> orders = (Collection<Orders>) request.getAttribute("orders");
 			<td><%=rest_name%></td>
 			<td><%=dish_name%></td>
 			<td><%=price%></td>
-			<td><select name="mark">
+			<td><select name="mark<%=i%>">
 				<option value=1>1</option>
 				<option value=2>2</option>
 				<option value=3>3</option>
@@ -49,9 +51,15 @@ Collection<Orders> orders = (Collection<Orders>) request.getAttribute("orders");
 				<option value=5>5</option> 
 				</select></td>
 			<td><input type=button value=submit 
-			onclick="javascript:window.location.href='mark.do?id=<%=order_id%>'"/>
+			onclick=submit<%=i%>() />
 			</td>
 			</tr>
+			  <script type="text/javascript">
+    function submit<%=i%>() {
+    var mark = document.getElementsByName("mark<%=i%>")[0].value;
+    window.location.href = "mark.do?id=<%=order_id%>&mark=" + mark;
+    }
+  </script>
 		<%}}
 %>
 </table>

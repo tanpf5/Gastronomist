@@ -43,7 +43,7 @@ public class Checkout extends HttpServlet {
 		}
 		
 		request.setAttribute("sum_price", sum_price);
-		RequestDispatcher rd = request.getRequestDispatcher(".jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("checkout.jsp");
 		rd.forward(request, response);
 		
 	}

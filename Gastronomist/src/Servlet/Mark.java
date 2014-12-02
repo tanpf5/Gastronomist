@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import DAO.DatabaseManager;
+import JavaBean.Dish;
+import JavaBean.Orders;
 
 public class Mark extends HttpServlet {
 
@@ -26,12 +28,17 @@ public class Mark extends HttpServlet {
 			throws ServletException, IOException {
 
 		int order_id = Integer.parseInt(request.getParameter("id"));
-		String mark1 = request.getParameter("mark");
-		int mark = Integer.parseInt(mark1);
-		
+		int mark = Integer.parseInt(request.getParameter("mark"));
 		
 		DatabaseManager dbm = new DatabaseManager();
+		Orders order = dbm.findOrderById(order_id);
+		Dish dish = order.getDish_id();
 		dbm.updateOrder(order_id, mark);
+		int dish_id = dish.getId();
+		int new_mark_times = dish.getMark_times() + 1;
+		int new_mark = 
+				(int) Math.rint((dish.getMark() * (new_mark_times - 1) + mark) / new_mark_times);
+		dbm.updateDishMark(dish_id, new_mark_times, new_mark);
 		
 		String url="myOrder.do";
 		url=new String(url.getBytes("GBK"),"ISO8859_1"); 

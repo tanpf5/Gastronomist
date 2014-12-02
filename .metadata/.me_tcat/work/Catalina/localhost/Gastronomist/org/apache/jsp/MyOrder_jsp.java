@@ -85,12 +85,14 @@ Collection<Orders> orders = (Collection<Orders>) request.getAttribute("orders");
       out.write("<table border=1 width=500px>\n");
       out.write("<tr bgcolor=pink><th>restaurant</th><th>dish</th><th>price</th><th>mark</th><th>submit</th></tr>\n");
  		Iterator<Orders> iterator = orders.iterator();
+		int i = 0;
 		while (iterator.hasNext()) {
 			Orders order = iterator.next();
+			i++;
 			String rest_name = order.getDish_id().getRest_id().getRe_name();
 			String dish_name = order.getDish_id().getDi_name();
 			double price = order.getDish_id().getPrice();
-			int mark = order.getDish_id().getMark();
+			int mark = order.getMark();
 			int order_id = order.getId();
 			if (mark == 0) {
 			
@@ -105,7 +107,9 @@ Collection<Orders> orders = (Collection<Orders>) request.getAttribute("orders");
       out.write("\t\t\t<td>");
       out.print(price);
       out.write("</td>\n");
-      out.write("\t\t\t<td><select name=\"mark\">\n");
+      out.write("\t\t\t<td><select name=\"mark");
+      out.print(i);
+      out.write("\">\n");
       out.write("\t\t\t\t<option value=1>1</option>\n");
       out.write("\t\t\t\t<option value=2>2</option>\n");
       out.write("\t\t\t\t<option value=3>3</option>\n");
@@ -113,11 +117,23 @@ Collection<Orders> orders = (Collection<Orders>) request.getAttribute("orders");
       out.write("\t\t\t\t<option value=5>5</option> \n");
       out.write("\t\t\t\t</select></td>\n");
       out.write("\t\t\t<td><input type=button value=submit \n");
-      out.write("\t\t\tonclick=\"javascript:window.location.href='mark.do?id=");
-      out.print(order_id);
-      out.write("'\"/>\n");
+      out.write("\t\t\tonclick=submit");
+      out.print(i);
+      out.write("() />\n");
       out.write("\t\t\t</td>\n");
       out.write("\t\t\t</tr>\n");
+      out.write("\t\t\t  <script type=\"text/javascript\">\n");
+      out.write("    function submit");
+      out.print(i);
+      out.write("() {\n");
+      out.write("    var mark = document.getElementsByName(\"mark");
+      out.print(i);
+      out.write("\")[0].value;\n");
+      out.write("    window.location.href = \"mark.do?id=");
+      out.print(order_id);
+      out.write("&mark=\" + mark;\n");
+      out.write("    }\n");
+      out.write("  </script>\n");
       out.write("\t\t");
 }}
 
@@ -128,7 +144,7 @@ Collection<Orders> orders = (Collection<Orders>) request.getAttribute("orders");
       out.write("</div>\n");
       out.write("<div class=\"interpertation\"><img src=\"images/5.png\"></img></div>\n");
       out.write("  </body>\n");
-      out.write("</html>\n");
+      out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

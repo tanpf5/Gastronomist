@@ -12,6 +12,7 @@ public class Dish implements Serializable{
 	private String di_name;
 	private double price;
 	private int times;
+	private int mark_times;
 	private int mark;
 	
 	public Dish() {
@@ -19,18 +20,8 @@ public class Dish implements Serializable{
 		// TODO Auto-generated constructor stub
 	}
 
-	public Dish(DishDAO dishDAO, int id, Restaurant rest_id, String di_name, double price, int times) {
-		super();
-		this.dishDAO = dishDAO;
-		this.id = id;
-		this.rest_id = rest_id;
-		this.di_name = di_name;
-		this.price = price;
-		this.times = times;
-	}
-
 	public Dish(DishDAO dishDAO, int id, Restaurant rest_id, String di_name,
-			double price, int times, int mark) {
+			double price, int times, int mark_times, int mark) {
 		super();
 		this.dishDAO = dishDAO;
 		this.id = id;
@@ -38,6 +29,7 @@ public class Dish implements Serializable{
 		this.di_name = di_name;
 		this.price = price;
 		this.times = times;
+		this.mark_times = mark_times;
 		this.mark = mark;
 	}
 
@@ -87,6 +79,14 @@ public class Dish implements Serializable{
 
 	public void setMark(int mark) {
 		this.mark = mark;
+	}
+
+	public int getMark_times() {
+		return mark_times;
+	}
+
+	public void setMark_times(int mark_times) {
+		this.mark_times = mark_times;
 	}
 	
 	

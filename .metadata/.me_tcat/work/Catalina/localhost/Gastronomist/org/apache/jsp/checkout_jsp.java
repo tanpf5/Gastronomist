@@ -4,7 +4,8 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 import java.util.*;
-import JavaBean.Normaluser;
+import JavaBean.*;
+import DAO.*;
 
 public final class checkout_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -58,6 +59,10 @@ String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 Normaluser user = (Normaluser) request.getSession().getAttribute("user");
 String name = user.getUsername();
+double sum_price = (Double)request.getAttribute("sum_price");
+Collection<OrderedDish> cart 
+			= (Collection<OrderedDish>) request.getSession().getAttribute("cart");
+DatabaseManager dbm = new DatabaseManager();
 
       out.write("\n");
       out.write("\n");
@@ -85,15 +90,48 @@ String name = user.getUsername();
       out.write("<body>\n");
       out.write("<div class=\"top-blank\"><img src=\"images/22.jpg\"></img></div>\n");
       out.write("<div class=\"background-register1\">\n");
-      out.write("<form action=\"***.jsp\" method=post>\n");
+      out.write("<form action=\"makeOrder.do\" method=post>\n");
       out.write("<div class=\"register-blank\">\n");
-      out.write("<div class=\"name\"><div class=\"username\"><h1 style=\"font-size:120%;color:green\">DEAR ");
+      out.write("<div class=\"name\"><div class=\"username\">\n");
+      out.write("<h1 style=\"font-size:120%;color:green\">DEAR ");
       out.print(name );
-      out.write(",YOUR FEE IS:</br>\n");
+      out.write(", YOUR FEE IS: ");
+      out.print(sum_price );
+      out.write("</br>\n");
       out.write("PLEASE CONFIRM:</h1></div>\n");
-      out.write("<div class=\"dishes\"></div>\n");
+      out.write("<div class=\"dishes\">\n");
+      out.write("<table border=1 width=360px>\n");
+      out.write("<tr bgcolor=pink><th>restaurant</th><th>dish</th><th>quantity</th><th>price</th></tr>\n");
+ Iterator<OrderedDish> iterator = cart.iterator();
+		while (iterator.hasNext()) {
+			OrderedDish od = iterator.next();
+			int dish_id = od.getDish_id();
+			Dish dish = dbm.findDishById(dish_id);
+			String rest_name = dish.getRest_id().getRe_name();
+			String dish_name = dish.getDi_name();
+			int quantity = od.getQuantity();
+			double price = od.getTotal_price();
+			
+      out.write("\n");
+      out.write("\t\t\t<tr>\n");
+      out.write("\t\t\t<td>");
+      out.print(rest_name);
+      out.write("</td><td>");
+      out.print(dish_name);
+      out.write("</td><td>");
+      out.print(quantity);
+      out.write("</td><td>");
+      out.print(price);
+      out.write("</td>\n");
+      out.write("\t\t\t</tr>\n");
+      out.write("\t\t");
+}
+
+      out.write("\n");
+      out.write("</table>\n");
+      out.write("</div>\n");
       out.write("<div class=\"tel\">Tel:<input type=\"text\"name=\"number\"style=\"width:250px;height:30px;margin-left:51px;\"></div>\n");
-      out.write("<div class=\"address\">Address:<input type=\"text\"name=\"dizhi\"style=\"width:250px;height:30px;margin-left:20px;\"></div>\n");
+      out.write("<div class=\"address\">Address:<input type=\"text\"name=\"address\"style=\"width:250px;height:30px;margin-left:20px;\"></div>\n");
       out.write("</div>\n");
       out.write("<div class=\"register-button\"><img src=\"images/19.jpg\" onclick=\"submit()\"></img></div>\n");
       out.write("</div>\n");

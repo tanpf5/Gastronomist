@@ -23,6 +23,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div class="login-blank3">
 <div class="login-blank3-helper1"><input type="text" maxlength=16; size="23"name="username"style="width:250px;height:43px;margin-left:20px;margin-top:18px;"/></div>
 <div class="login-blank3-helper2"><input type="password" maxlength=16; size="23"name="password"style="width:250px;height:43px;margin-left:20px;margin-top:18px;"/></div>
+administrator
+<input type="checkbox" name="admin?" value=1 />
 </div><div class="login-button"><img src="images/7.png"  onclick="submit()" style="margin-top:20px;margin-left:7px;border:0px;"></div>
 <a href="signup.jsp"><img src="images/8.png"style="margin-top:20px;margin-left:0px;border:0px;"></img></a>
 </div>

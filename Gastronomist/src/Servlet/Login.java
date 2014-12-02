@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import DAO.DatabaseManager;
+import JavaBean.Administrator;
 import JavaBean.Normaluser;
 import JavaBean.OrderedDish;
 
@@ -32,19 +33,39 @@ public class Login extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		DatabaseManager dbm = new DatabaseManager();
-		Normaluser user = dbm.normaluserLogin(username, password);
-		if (user == null) {
-			String url="index.jsp";
-			url=new String(url.getBytes("GBK"),"ISO8859_1"); 
-			response.sendRedirect(url);
+		String admin = request.getParameter("admin?");
+		if (admin == null) {
+			Normaluser user = dbm.normaluserLogin(username, password);
+			if (user == null) {
+				String url="index.jsp";
+				url=new String(url.getBytes("GBK"),"ISO8859_1"); 
+				response.sendRedirect(url);
+			}
+			else {
+				Collection<OrderedDish> cart = new ArrayList<OrderedDish>();
+				request.getSession().setAttribute("cart", cart);
+				request.getSession().setAttribute("user", user);
+				request.getSession().setAttribute("type", 1);
+				String url="homePage.jsp";
+				url=new String(url.getBytes("GBK"),"ISO8859_1"); 
+				response.sendRedirect(url); 
+			}
 		}
 		else {
-			Collection<OrderedDish> cart = new ArrayList<OrderedDish>();
-			request.getSession().setAttribute("cart", cart);
-			request.getSession().setAttribute("user", user);
-			String url="homePage.jsp";
-			url=new String(url.getBytes("GBK"),"ISO8859_1"); 
-			response.sendRedirect(url); 
+			Administrator administrator = dbm.adminLogin(username, password);
+			if (administrator == null) {
+				String url="index.jsp";
+				url=new String(url.getBytes("GBK"),"ISO8859_1"); 
+				response.sendRedirect(url);
+			}
+			else {
+				Collection<OrderedDish> cart = new ArrayList<OrderedDish>();
+				request.getSession().setAttribute("admin", administrator);
+				request.getSession().setAttribute("type", 2);
+				String url="homePage.jsp";
+				url=new String(url.getBytes("GBK"),"ISO8859_1"); 
+				response.sendRedirect(url); 
+			}
 		}
 	}
 

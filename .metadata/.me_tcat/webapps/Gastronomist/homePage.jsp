@@ -1,7 +1,8 @@
-<%@ page language="java" import="java.util.*, JavaBean.Normaluser" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*, JavaBean.Normaluser, JavaBean.Administrator" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+int type = (Integer) request.getSession().getAttribute("type");
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -76,9 +77,12 @@ function change2(obj){
   </head>
 <body>
 <div class="top"><img src="images/2.png"style="width:300px;height:100px;"></img>
-<div class="name"><%Normaluser user = (Normaluser) request.getSession().getAttribute("user");
+<div class="name"><%
+					if (type == 1) {
+					Normaluser user = (Normaluser) request.getSession().getAttribute("user");
 					String name = user.getUsername();
-                    out.println("hello  "+name); %><a href="myOrder.do">MYORDER</a><a href="info.jsp">INFO</a></div></div>
+                    out.println("hello  "+name); }
+                    %><a href="myOrder.do">MYORDER</a><a href="info.jsp">INFO</a></div></div>
 <div class="div17">
 	
 	<!--shift右部-->

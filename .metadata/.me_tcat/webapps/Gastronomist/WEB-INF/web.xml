@@ -60,6 +60,34 @@
     <servlet-name>Mark</servlet-name>
     <servlet-class>Servlet.Mark</servlet-class>
   </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MakeOrder</servlet-name>
+    <servlet-class>Servlet.MakeOrder</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteDish</servlet-name>
+    <servlet-class>Servlet.deleteDish</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>editDish</servlet-name>
+    <servlet-class>Servlet.editDish</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addDish</servlet-name>
+    <servlet-class>Servlet.addDish</servlet-class>
+  </servlet>
+
+
+
+
 
 
 
@@ -98,6 +126,22 @@
   <servlet-mapping>
     <servlet-name>Mark</servlet-name>
     <url-pattern>/mark.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MakeOrder</servlet-name>
+    <url-pattern>/makeOrder.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteDish</servlet-name>
+    <url-pattern>/deleteDish.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>editDish</servlet-name>
+    <url-pattern>/editDish.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addDish</servlet-name>
+    <url-pattern>/addDish.do</url-pattern>
   </servlet-mapping>
 
   <welcome-file-list>

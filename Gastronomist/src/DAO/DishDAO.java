@@ -39,8 +39,9 @@ public class DishDAO {
 				String di_name = rs.getString("di_name");
 				double price = rs.getDouble("price");
 				int times = rs.getInt("times");
+				int mark_times = rs.getInt("mark_times");
 				int mark = rs.getInt("mark");
-				dishes.add(new Dish(this, id, rest_id, di_name, price, times, mark));
+				dishes.add(new Dish(this, id, rest_id, di_name, price, times, mark_times, mark));
 			}
 			return dishes;
 		}
@@ -52,7 +53,7 @@ public class DishDAO {
 	
 	public void insertDish(int id, int rest_id, String di_name, double price){
 		try {
-	        String insert = "INSERT INTO Dish VALUES (?, ?, ?, ?, ?, ?)";   
+	        String insert = "INSERT INTO Dish VALUES (?, ?, ?, ?, ?, ?, ?)";   
 	        
 			PreparedStatement pstmt = conn.prepareStatement(insert);
 			pstmt.setInt(1, id);
@@ -61,6 +62,7 @@ public class DishDAO {
 			pstmt.setDouble(4, price);
 			pstmt.setInt(5, 0);
 			pstmt.setInt(6, 0);
+			pstmt.setInt(7, 0);
 			
 			pstmt.executeUpdate();
 		}
@@ -148,6 +150,24 @@ public class DishDAO {
 		}
 	}
 	
+	public void updateDishMark(int id, int mark_times, int mark) {
+		try {
+			String update = "update Dish "
+						   +"set mark_times = ?, mark = ? "
+						   +"where id = ?";
+			PreparedStatement pstmt = conn.prepareStatement(update);
+			pstmt.setInt(1, mark_times);
+			pstmt.setInt(2, mark);
+			pstmt.setInt(3, id);
+			pstmt.executeUpdate();
+						
+		}
+		catch (SQLException e) {
+			dbm.cleanup();
+			throw new RuntimeException("error updating dish", e);
+		}
+	}
+	
 	public void deleteDish(int id) {
 		try {
 			String delete = "DELETE from Dish " +
@@ -179,13 +199,31 @@ public class DishDAO {
 			String di_name = rs.getString("di_name");
 			double price = rs.getDouble("price");
 			int times = rs.getInt("times");
+			int mark_times = rs.getInt("mark_times");
 			int mark = rs.getInt("mark");
-			return new Dish(this, id, rest_id, di_name, price, times, mark);
+			return new Dish(this, id, rest_id, di_name, price, times, mark_times, mark);
 			
 			
 		} catch (SQLException e) {
 			dbm.cleanup();
 			throw new RuntimeException("error finding restaurant", e);
+		}
+	}
+	
+	public void updateDishTimes(int id, int times) {
+		try {
+			String update = "update Dish "
+						   +"set times = ? "
+						   +"where id = ?";
+			PreparedStatement pstmt = conn.prepareStatement(update);
+			pstmt.setInt(1, times);
+			pstmt.setInt(2, id);
+			pstmt.executeUpdate();
+						
+		}
+		catch (SQLException e) {
+			dbm.cleanup();
+			throw new RuntimeException("error updating dish", e);
 		}
 	}
 	

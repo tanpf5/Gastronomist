@@ -5,6 +5,7 @@ import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 import java.util.*;
 import JavaBean.Normaluser;
+import JavaBean.Administrator;
 
 public final class homePage_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -56,6 +57,7 @@ public final class homePage_jsp extends org.apache.jasper.runtime.HttpJspBase
 
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+int type = (Integer) request.getSession().getAttribute("type");
 
       out.write("\n");
       out.write("\n");
@@ -134,9 +136,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       out.write("<body>\n");
       out.write("<div class=\"top\"><img src=\"images/2.png\"style=\"width:300px;height:100px;\"></img>\n");
       out.write("<div class=\"name\">");
-Normaluser user = (Normaluser) request.getSession().getAttribute("user");
+
+					if (type == 1) {
+					Normaluser user = (Normaluser) request.getSession().getAttribute("user");
 					String name = user.getUsername();
-                    out.println("hello  "+name); 
+                    out.println("hello  "+name); }
+                    
       out.write("<a href=\"myOrder.do\">MYORDER</a><a href=\"info.jsp\">INFO</a></div></div>\n");
       out.write("<div class=\"div17\">\n");
       out.write("\t\n");

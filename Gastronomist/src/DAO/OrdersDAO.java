@@ -124,7 +124,6 @@ public class OrdersDAO {
 			
 			int id = rs.getInt("id");
 			Normaluser user_id = dbm.checkInfo(rs.getInt("user_id"));
-			Restaurant rest_id = dbm.findRestaurant(rs.getInt("rest_id")) ;
 			Dish dish_id = dbm.findDishById(rs.getInt("dish_id"));
 			double price = rs.getDouble("price");
 			String tele_num = rs.getString("tele_num");

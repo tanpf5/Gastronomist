@@ -28,13 +28,20 @@ public class FindDishes extends HttpServlet {
 	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+		
+		int type = (Integer) request.getSession().getAttribute("type");
 		int rest_id = Integer.parseInt(request.getParameter("id"));
 		DatabaseManager dbm = new DatabaseManager();
 		Collection<Dish> dishes= dbm.findAllDishByRest(rest_id);
 		request.setAttribute("dishes", dishes);
 		request.setAttribute("rest_id", rest_id);
-		RequestDispatcher rd = request.getRequestDispatcher("showDish.jsp");
+		RequestDispatcher rd;
+		if (type == 1) {
+			rd = request.getRequestDispatcher("showDish.jsp");
+		}
+		else {
+			rd = request.getRequestDispatcher("editMenu.jsp");
+		}
 		rd.forward(request, response);
 	}
 

@@ -1,10 +1,13 @@
-<%@ page language="java" import="java.util.*, JavaBean.Normaluser" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*, JavaBean.* , DAO.*" pageEncoding="ISO-8859-1"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 Normaluser user = (Normaluser) request.getSession().getAttribute("user");
 String name = user.getUsername();
 double sum_price = (Double)request.getAttribute("sum_price");
+Collection<OrderedDish> cart 
+			= (Collection<OrderedDish>) request.getSession().getAttribute("cart");
+DatabaseManager dbm = new DatabaseManager();
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -29,14 +32,33 @@ double sum_price = (Double)request.getAttribute("sum_price");
 <body>
 <div class="top-blank"><img src="images/22.jpg"></img></div>
 <div class="background-register1">
-<form action="***.jsp" method=post>
+<form action="makeOrder.do" method=post>
 <div class="register-blank">
 <div class="name"><div class="username">
 <h1 style="font-size:120%;color:green">DEAR <%=name %>, YOUR FEE IS: <%=sum_price %></br>
 PLEASE CONFIRM:</h1></div>
-<div class="dishes"></div>
+<div class="dishes">
+<table border=1 width=360px>
+<tr bgcolor=pink><th>restaurant</th><th>dish</th><th>quantity</th><th>price</th></tr>
+<% Iterator<OrderedDish> iterator = cart.iterator();
+		while (iterator.hasNext()) {
+			OrderedDish od = iterator.next();
+			int dish_id = od.getDish_id();
+			Dish dish = dbm.findDishById(dish_id);
+			String rest_name = dish.getRest_id().getRe_name();
+			String dish_name = dish.getDi_name();
+			int quantity = od.getQuantity();
+			double price = od.getTotal_price();
+			%>
+			<tr>
+			<td><%=rest_name%></td><td><%=dish_name%></td><td><%=quantity%></td><td><%=price%></td>
+			</tr>
+		<%}
+%>
+</table>
+</div>
 <div class="tel">Tel:<input type="text"name="number"style="width:250px;height:30px;margin-left:51px;"></div>
-<div class="address">Address:<input type="text"name="dizhi"style="width:250px;height:30px;margin-left:20px;"></div>
+<div class="address">Address:<input type="text"name="address"style="width:250px;height:30px;margin-left:20px;"></div>
 </div>
 <div class="register-button"><img src="images/19.jpg" onclick="submit()"></img></div>
 </div>

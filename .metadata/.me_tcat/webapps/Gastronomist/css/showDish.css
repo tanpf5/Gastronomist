@@ -26,7 +26,7 @@ body{
 }
 .register-blank{
    width:500px;
-   height:700px;
+   height:600px;
    border:1px solid blue;
    float:left;
    margin-left:150px;
@@ -84,12 +84,12 @@ body{
    height:200px;
    border:1px solid red;
    margin-left:0px;
-   margin-top:500px;
+   margin-top:300px;
 }
 .register-button img{
    width:250px;
    height:200px;
-   margin-left:130px;
+   margin-left:100px;
 }
 .Tel-helper{
    width:400px;

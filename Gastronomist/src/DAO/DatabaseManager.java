@@ -131,6 +131,14 @@ public class DatabaseManager {
 		return dishDAO.findById(id);
 	}
 	
+	public Orders findOrderById(int id) {
+		return ordersDAO.findById(id);
+	}
+	
+	public void updateDishMark(int id, int mark_times, int mark){
+		dishDAO.updateDishMark(id, mark_times, mark);
+	}
+	
 	public void commit() {
 		try {
 	         conn.commit();
@@ -156,6 +164,10 @@ public class DatabaseManager {
 	      }
 	      catch(SQLException e) {
 	    	  System.out.println("fatal error: cannot cleanup connection"); }
+	}
+	
+	public void updateDishTimes(int id, int times) {
+		dishDAO.updateDishTimes(id, times);
 	}
 	
 }
