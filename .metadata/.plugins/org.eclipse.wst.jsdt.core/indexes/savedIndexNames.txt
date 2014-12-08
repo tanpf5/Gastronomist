@@ -4,6 +4,5 @@ INDEX VERSION 1.122+/Users/Vigery/GitHub/Web/.metadata/.plugins/org.eclipse.wst.
 2961680959.index
 3649851288.index
 567602091.index
-567602091.index
 2580350897.index
 565165300.index

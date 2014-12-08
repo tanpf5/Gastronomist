@@ -140,9 +140,12 @@ int type = (Integer) request.getSession().getAttribute("type");
 					if (type == 1) {
 					Normaluser user = (Normaluser) request.getSession().getAttribute("user");
 					String name = user.getUsername();
-                    out.println("hello  "+name); }
+                    out.println("hello  "+name); 
                     
-      out.write("<a href=\"myOrder.do\">MYORDER</a><a href=\"info.jsp\">INFO</a></div></div>\n");
+      out.write("<a href=\"myOrder.do\">MYORDER</a><a href=\"info.jsp\">INFO</a>\n");
+      out.write("                    </div>");
+} 
+      out.write("</div> \n");
       out.write("<div class=\"div17\">\n");
       out.write("\t<div class=\"navi\">\n");
       out.write("\t<ul>\n");

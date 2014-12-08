@@ -81,8 +81,9 @@ function change2(obj){
 					if (type == 1) {
 					Normaluser user = (Normaluser) request.getSession().getAttribute("user");
 					String name = user.getUsername();
-                    out.println("hello  "+name); }
-                    %><a href="myOrder.do">MYORDER</a><a href="info.jsp">INFO</a></div></div>
+                    out.println("hello  "+name); 
+                    %><a href="myOrder.do">MYORDER</a><a href="info.jsp">INFO</a>
+                    </div><%} %></div> 
 <div class="div17">
 	<div class="navi">
 	<ul>
