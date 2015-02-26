@@ -11113,3 +11113,74 @@ org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 1584
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SESSION 2015-02-09 19:18:25.223 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Vigery/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/Vigery/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-02-09 19:18:37.967
+!MESSAGE System property http.nonProxyHosts has been set to local„ÄÅ169.254/16Ôºåliveupdate.symantec.comÔºåliveupdate.symantecliveupdate.com|*.local„ÄÅ169.254/16Ôºåliveupdate.symantec.comÔºåliveupdate.symantecliveupdate.com by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:18:55.356
+!MESSAGE Unable to locate .myeclipse.properties file
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-02-09 19:19:00.845
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:20:16.002
+!MESSAGE Unable to locate .myeclipse.properties file
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:21:45.338
+!MESSAGE Unable to locate .myeclipse.properties file
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:21:45.339
+!MESSAGE Subscription key decode failed.  Hash code was not correct so key is being ignored.
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:21:59.800
+!MESSAGE Unable to locate .myeclipse.properties file
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:21:59.800
+!MESSAGE Exception thrown during license key decode.  Message: 'For input string: "o8or0p93s08oo27"'
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:22:09.337
+!MESSAGE Unable to locate .myeclipse.properties file
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:22:09.339
+!MESSAGE Subscription key decode failed.  Hash code was not correct so key is being ignored.
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:28:35.324
+!MESSAGE Unable to locate .myeclipse.properties file
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:28:41.187
+!MESSAGE Unable to locate .myeclipse.properties file
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:28:41.188
+!MESSAGE Subscription key decode failed.  Hash code was not correct so key is being ignored.
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:29:36.057
+!MESSAGE Unable to locate .myeclipse.properties file
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:29:36.073
+!MESSAGE Unable to locate .myeclipse.properties file
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-02-09 19:30:24.118
+!MESSAGE Unable to locate .myeclipse.properties file
+!SESSION 2015-02-11 09:09:12.218 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Vigery/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/Vigery/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-02-11 09:10:25.047
+!MESSAGE System property http.nonProxyHosts has been set to local„ÄÅ169.254/16Ôºåliveupdate.symantec.comÔºåliveupdate.symantecliveupdate.com|*.local„ÄÅ169.254/16Ôºåliveupdate.symantec.comÔºåliveupdate.symantecliveupdate.com by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-02-11 12:54:29.732
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-02-11 12:54:51.366
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2

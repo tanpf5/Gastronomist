@@ -1,9 +1,0 @@
-package JavaBean;
-
-import java.io.Serializable;
-
-public class OrderedDish implements Serializable {
-	
-	private int dish_id;
-	private int quantity;
-}
